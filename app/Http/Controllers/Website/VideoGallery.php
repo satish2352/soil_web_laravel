@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 use Session;
 use Validator;
 use Config;
-
+use App\Models\WebVideos;
 
 class VideoGallery extends Controller
 {
