@@ -269,26 +269,27 @@
 
 <div class="dropup">
   <button class="whatsapp-button wtup-main" data-toggle="dropdown">
-    <img class="wt-main" src="img/icon/whatsapp-button.png" alt="botão whatsapp">
+    <img class="wt-main" src="{{ asset('img/icon/whatsapp-button.png') }}" alt="botão whatsapp">
   </button>
   <div class="dropup-content drop-m">
     <a href="https://wa.me/918669200221?text=Hello" data-toggle="tooltip" data-placement="left" title="SCT Consulting"
       class="whatsapp-button wtup-1" target="_blank">
-      <img class="wtup" src="img/icon/whatsapp-button.png" alt="botão whatsapp">
+      <img class="wtup" src="{{ asset('img/icon/whatsapp-button.png') }}" alt="botão whatsapp">
       <p class="wtupp-1">SCT Consulting</p>
     </a>
     <a href="https://wa.me/918669950005?text=Hello" data-toggle="tooltip" data-placement="left" title="SCT Sales"
       class="whatsapp-button wtup-2" target="_blank">
-      <img class="wtup" src="img/icon/whatsapp-button.png" alt="botão whatsapp">
+      <img class="wtup" src="{{ asset('img/icon/whatsapp-button.png') }}" alt="botão whatsapp">
       <p class="wtupp-2">SCT Sales</p>
     </a>
     <a href="https://wa.me/919545710002?text=Hello" data-toggle="tooltip" data-placement="left" title="SCT Management"
       class="whatsapp-button wtup-3" target="_blank">
-      <img class="wtup" src="img/icon/whatsapp-button.png" alt="botão whatsapp">
+      <img class="wtup" src="{{ asset('img/icon/whatsapp-button.png') }}" alt="botão whatsapp">
       <p class="wtupp-3">SCT Management</p>
     </a>
   </div>
 </div>
+
 
 <!-- Whats App Integration End -->
 

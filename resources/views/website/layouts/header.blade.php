@@ -79,23 +79,28 @@
               <div class="header-bottom-search">
                 <div class="header-tag-list">
                   <ul>
-                    <li><a href="mailto:soilchargertec@gmail.com"><img src="img/icon/web.png" class="webicon" alt="Logo"
+                    <li><a href="mailto:soilchargertec@gmail.com"><img src="{{asset('img/icon/web.png')}}"
+                          class="webicon" alt="Logo"
                           style="width: 23px; height: 24px;">&nbsp;soilchargertech@gmail.com</a></li>
-                    <li><a href="callto:866 920 0221"><img src="img/icon/Call.png" class="webicon" alt="Logo"
-                          style="width: 23px; height: 24px;">&nbsp;+91 8669200221</a></li>
-                    <li><a href="callto:988 179 8028"><img src="img/icon/Call.png" class="webicon" alt="Logo"
-                          style="width: 23px; height: 24px;">&nbsp;+91 9881798028</a></li>
-                    <a href="https://twitter.com/GoldenOpportu10 " target="_blank">
-                      <img class="webicon" src="img/icon/twitter.png" alt="Logo" style="width: 23px; height: 24px;">
+                    <li><a href="callto:866 920 0221"><img src="{{asset('img/icon/Call.png')}}" class="webicon"
+                          alt="Logo" style="width: 23px; height: 24px;">&nbsp;+91 8669200221</a></li>
+                    <li><a href="callto:988 179 8028"><img src="{{asset('img/icon/Call.png')}}" class="webicon"
+                          alt="Logo" style="width: 23px; height: 24px;">&nbsp;+91 9881798028</a></li>
+                    <a href="{{asset('https://twitter.com/GoldenOpportu10')}} " target="_blank">
+                      <img class="webicon" src="{{asset('img/icon/twitter.png')}}" alt="Logo"
+                        style="width: 23px; height: 24px;">
                     </a> &nbsp;&nbsp;
                     <a href="https://www.instagram.com/" target="_blank">
-                      <img class="webicon" src="img/icon/Instgram.png" alt="Logo" style="width: 23px; height: 24px;">
+                      <img class="webicon" src="{{asset('img/icon/Instgram.png')}}" alt="Logo"
+                        style="width: 23px; height: 24px;">
                     </a> &nbsp;&nbsp;
                     <a href="https://www.youtube.com/user/ramanu7985" target="_blank">
-                      <img class="webicon" src="img/icon/Youtube.png" alt="Logo" style="width: 23px; height: 24px;">
+                      <img class="webicon" src="{{asset('img/icon/Youtube.png')}}" alt="Logo"
+                        style="width: 23px; height: 24px;">
                     </a> &nbsp;&nbsp;
                     <a href="https://www.facebook.com/Soil.Charger.Technology/" target="_blank">
-                      <img class="webicon" src="img/icon/facebook.png" alt="Logo" style="width: 23px; height: 24px;">
+                      <img class="webicon" src="{{asset('img/icon/facebook.png')}}" alt="Logo"
+                        style="width: 23px; height: 24px;">
                     </a>
                   </ul>
                 </div>
