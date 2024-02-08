@@ -2061,11 +2061,7 @@ $counter_list_data) { ?>
             </div>
           </div>
         </div>
-        <!-- <div class="row">
-                                    <div class="col-lg-12 col-md-12 col-sm-12 iso-bottom-bg">
-                                        <img src="img/iso/wave.png" alt="" srcset="">
-                                    </div>
-                                </div> -->
+
       </div>
     </div>
   </div>

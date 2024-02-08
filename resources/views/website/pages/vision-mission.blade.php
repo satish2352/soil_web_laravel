@@ -14,9 +14,9 @@
           <?php foreach ($frontvisionlist  as $key =>
 $frontvisionlist_data) { ?>
           <div class="org-frm-icon">
-            <img src="img/icon/eye.gif" alt="" srcset="" class="v_gif">
+            <img src="{{asset('img/icon/eye.gif')}}" alt="" srcset="" class="v_gif">
             <h2 class="vision-title1"><?php echo $frontvisionlist_data['title']; ?></h2>
-            <img src="img/images/organic_item_shape02.png" alt="" class="org-frm-icon-shape">
+            <img src="{{asset('img/images/organic_item_shape02.png')}}" alt="" class="org-frm-icon-shape">
           </div>
           <div class="org-frm-content">
 
@@ -32,9 +32,9 @@ $frontvisionlist_data) { ?>
           <?php foreach ($frontmissionlist  as $key =>
 $frontmissionlist_data) { ?>
           <div class="org-frm-icon">
-            <img src="img/icon/rocket.gif" alt="" srcset="" class="v_gif">
+            <img src="{{asset('img/icon/rocket.gif')}}" alt="" srcset="" class="v_gif">
             <h2 class="vision-title1"><?php echo $frontmissionlist_data['title']; ?></h2>
-            <img src="img/images/organic_item_shape02.png" alt="" class="org-frm-icon-shape">
+            <img src="{{asset('img/images/organic_item_shape02.png')}}" alt="" class="org-frm-icon-shape">
           </div>
           <div class="org-frm-content">
 
