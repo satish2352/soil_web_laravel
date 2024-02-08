@@ -8,7 +8,7 @@ $base1 .= '://'.$_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NA
 $base .= '://'.$_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 }
 
-define('PREFIX1', $base1.'public/');
+define('PREFIX1', $base1.'finalapi_lumen/public/');
 define('BASE_PATH', $base.'/');
 define('PREFIX', $base);
 define('URL_HOME', PREFIX.'home');
@@ -265,5 +265,3 @@ define('COMPLAINT_VIEW', UPLOADS_VIEW_WITH_DOMAIN.'complaint/');
 // define('URL_STUDENT_ANALYSIS_BY_EXAM', PREFIX.'student/analysis/by-exam/');
 // define('URL_STUDENT_SUBSCRIPTIONS_PLANS', PREFIX.'subscription/plans');
 // define('URL_STUDENT_LIST_INVOICES', PREFIX.'subscription/list-invoices/');
-
-

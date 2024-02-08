@@ -250,13 +250,13 @@
           <div class="footer-modal d-flex justify-content-center">
             <button type="button" data-dismiss="modal">CANCEL</button>
             <input type="button" class="submit_data" id="submit_data" value="SUBMIT" style="float: right;
-    border: 2px solid #b9dd39;
-    margin-right: 10px;
-    margin-bottom: 10px;
-    color: black;
-    border-radius: 8px;
-    padding: 8px 40px;
-    background: transparent;">
+              border: 2px solid #b9dd39;
+              margin-right: 10px;
+              margin-bottom: 10px;
+              color: black;
+              border-radius: 8px;
+              padding: 8px 40px;
+              background: transparent;">
           </div>
         </form>
       </div>
