@@ -24,7 +24,7 @@ class PhotoGallery extends Controller
     {
         $gallarylist_array = $this->frontphotogallerylistlimit($request);
 
-        return view('website.pages.sub-photo-gallery',compact('gallarylist_array '));
+        return view('website.pages.sub-photo-gallery',compact('gallarylist_array'));
     }
 
 

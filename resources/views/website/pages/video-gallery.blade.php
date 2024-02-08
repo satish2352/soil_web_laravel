@@ -33,7 +33,7 @@
 
     <div class="row">
       <div class="col-md-12 viewmore">
-        <a href="sub_videogallery.php"><button type="button" class="btn btn-primary viewbtn"
+        <a href="{{route('sub-vedio-gallery')}}"><button type="button" class="btn btn-primary viewbtn"
             style="padding: 10px 20px; "> view more </button></a>
       </div>
     </div>

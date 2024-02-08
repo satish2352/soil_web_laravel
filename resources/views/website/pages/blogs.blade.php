@@ -20,8 +20,9 @@
           <div class="blog-post-content">
             <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>
             <!-- <p><?php echo $frontblogarticlelist_data['content']; ?></p> -->
-            <a href="sub_blog.php?id=<?php echo $frontblogarticlelist_data['id']; ?>" class="arrow-btn">Read More
+            <a href="{{ route('sub-blogs', ['id' => $frontblogarticlelist_data['id']]) }}" class="arrow-btn">Read More
               <span></span></a>
+
 
           </div>
         </div>

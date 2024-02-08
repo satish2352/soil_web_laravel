@@ -19,6 +19,13 @@ class VideoGallery extends Controller
 
         return view('website.pages.video-gallery',compact('webvideo_educationallimit'));
     }
+    public function index2(Request $request)
+    {
+
+        $webvideo_educationallimit=$this->webvideo_educationallimit($request);
+
+        return view('website.pages.sub-video-gallery',compact('webvideo_educationallimit'));
+    }
     public function webvideo_educationallimit(Request $request)
     {
          

@@ -19,6 +19,13 @@ class ProductController extends Controller
 
         return view('website.pages.products',compact('frontproductlist'));
     }
+    public function index2(Request $request)
+    {
+
+        $frontproductlist=$this->frontproductlist($request);
+
+        return view('website.pages.sub-product',compact('frontproductlist'));
+    }
 
     public function frontproductlist(Request $request)
     {
