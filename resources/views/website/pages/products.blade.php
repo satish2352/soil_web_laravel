@@ -36,7 +36,7 @@
               <a href="sub_product.php"><?php echo $frontproductlist_data['title']; ?></a>
             </div>
             <div class="project-content">
-              <a href="{{ route('sub-products', ['prod' => str_replace(' ', '_', $frontproductlist_data['title'])]) }}"
+              <a href="{{ route('sub-products', ['prod' => $frontproductlist_data['id'] ])}}"
                 type="button" class="btn">Read More</a>
             </div>
 

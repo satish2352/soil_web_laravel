@@ -41,7 +41,7 @@ class BlogController extends Controller
         }
         foreach($result as $key=>$value)
         {
-            $value->photopath=Config::get('DocumentConstant.BLOG_CONTENT_VIEW').$value->photo_one;
+            $value->photopath=BLOG_CONTENT_VIEW.$value->photo_one;
         }
         return $result;
     }
