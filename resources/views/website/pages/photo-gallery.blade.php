@@ -19,7 +19,7 @@
 $frontphotogallerylistlimit_data) { ?>
 
         <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-          <img src="<?php echo env('API_LINK') .$frontphotogallerylistlimit_data['photopath']; ?>" width="250px"
+          <img src="<?php echo env('API_LINK').$frontphotogallerylistlimit_data['photopath']; ?>" width="250px"
             itemprop="thumbnail" alt="Image description" class="img-fluid" />
           <div class="portfolio-overlay">
             <div class="overlay-content">

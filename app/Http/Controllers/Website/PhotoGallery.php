@@ -22,17 +22,20 @@ class PhotoGallery extends Controller
 
     public function index2(Request $request)
     {
-        $frontphotogallerylistlimit=$this->frontphotogallerylistlimit($request);
+        $gallarylist_array = $this->frontphotogallerylistlimit($request);
 
-        return view('website.pages.sub-photo-gallery',compact('frontphotogallerylistlimit'));
+        return view('website.pages.sub-photo-gallery',compact('gallarylist_array '));
     }
+
+
+
     public function frontphotogallerylistlimit(Request $request)
     {
         
             $result = WebGallaryPhoto::where('status','0')->orderBy('id', 'DESC')->LIMIT(20)->get();
             foreach($result as $key=>$value)
             {
-                $value->photopath=Config::get('DocumentConstant.WEB_GALLARY_PHOTO_VIEW').$value->photo_one;
+                $value->photopath=WEB_GALLARY_PHOTO_VIEW.$value->photo_one;
             }
             return $result;
     }
