@@ -25,7 +25,7 @@ Route::get('/products', ['as' => 'products', 'uses' => 'App\Http\Controllers\Web
 Route::get('/sub-product/{prod}', ['as' => 'sub-products', 'uses' => 'App\Http\Controllers\Website\ProductController@index2']);
 Route::get('/careers', ['as' => 'careers', 'uses' => 'App\Http\Controllers\Website\CareerController@index']);
 Route::get('/blogs', ['as' => 'blogs', 'uses' => 'App\Http\Controllers\Website\BlogController@index']);
-Route::get('/sub-blogs', ['as' => 'sub-blogs', 'uses' => 'App\Http\Controllers\Website\BlogController@index']);
+Route::get('/sub-blogs', ['as' => 'sub-blogs', 'uses' => 'App\Http\Controllers\Website\BlogController@index2']);
 
 Route::post('/internship_form_submit', ['as' => 'internship_form_submit', 'uses' => 'App\Http\Controllers\Website\CareerController@frontinternshipadd']);
 Route::post('/frontjobpostingadd', ['as' => 'frontjobpostingadd', 'uses' => 'App\Http\Controllers\Website\CareerController@frontjobpostingadd']);

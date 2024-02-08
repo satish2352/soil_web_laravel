@@ -21,9 +21,9 @@ class ProductController extends Controller
     }
     public function index2(Request $request)
     {
-
+        // dd($request->prod);
         $frontproductlist=$this->frontproductlist($request);
-
+        // dd($frontproductlist);
         return view('website.pages.sub-product',compact('frontproductlist'));
     }
 

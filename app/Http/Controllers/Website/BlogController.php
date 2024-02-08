@@ -20,6 +20,13 @@ class BlogController extends Controller
         
         return view('website.pages.blogs',compact('frontblogarticlelist'));
     }
+    public function index2(Request $request)
+    {
+        
+        $frontblogarticlelist =$this->frontblogarticlelist($request);
+        
+        return view('website.pages.sub-blogs',compact('frontblogarticlelist'));
+    }
 
 
     public function frontblogarticlelist(Request $request)
