@@ -33,3 +33,4 @@ Route::post('/frontdistributorregistration', ['as' => 'frontdistributorregistrat
 Route::post('/districtlist', ['as' => 'districtlist', 'uses' => 'App\Http\Controllers\Website\CareerController@districtlist']);
 Route::post('/talukalist', ['as' => 'talukalist', 'uses' => 'App\Http\Controllers\Website\CareerController@talukalist']);
 Route::post('/villagelist', ['as' => 'villagelist', 'uses' => 'App\Http\Controllers\Website\CareerController@villagelist']);
+Route::post('/frontproductreviewadd', ['as' => 'frontproductreviewadd', 'uses' => 'App\Http\Controllers\Website\CareerController@frontproductreviewadd']);

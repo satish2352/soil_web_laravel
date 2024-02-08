@@ -164,6 +164,8 @@
       </div>
       <div class="modal-body">
         <form method="post">
+          @csrf
+
           <input type="text" class="form-control" id="name_of_enq_person" name="name_of_enq_person"
             placeholder="Your Name" required="required">
           <input type="email" class="form-control mt-3" id="email_of_enq_person" name="email_of_enq_person"
@@ -425,7 +427,7 @@ $(document).on('click', '#submit_data', function() {
 
 
   $(".preloader").show();
-  var urlGet = "https://soilchargertechnology.com/api/api/frontenquiryadd";
+  var urlGet = "{{env('API_LINK_AJAX')}}/frontenquiryadd";
   $.ajax({
     url: urlGet,
     type: 'POST',

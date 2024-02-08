@@ -59,4 +59,39 @@ class ProductController extends Controller
             return $result;
     }
 
+    public function frontproductreviewadd(Request $request)
+    {
+        try
+        {
+            $prod_review = new ProductReview();
+            $prod_review->product_id = $request->product_id;
+            $prod_review->name = $request->name;
+            $prod_review->email = $request->email;
+            $prod_review->comment = $request->comment;
+            $prod_review->save();
+          
+            if ($prod_review)
+            {
+                 return response()->json([
+                    "data" => $prod_review,
+                    "result" => true,
+                    "message" => 'Information Added Successfully'
+                ]);
+            }
+            else
+            {
+                 return response()->json([
+                    "data" => '',
+                    "result" => false,
+                    "message" => 'Information Not Added'
+                ]);
+                
+            }
+        }
+        catch(Exception $e) {
+          return  'Message: ' .$e->getMessage();
+        }
+
+    }
+
 }

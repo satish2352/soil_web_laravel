@@ -105,6 +105,7 @@ $webmarquee_array_data) { ?>
       </div>
       <div class="modal-body" style="color: black;">
         <form method="post">
+          @csrf
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputname51"><b>Name/Company Name :</b></label>
@@ -504,7 +505,7 @@ $frontphotogallerylistlimit_data) { ?>
     </div>
     <div class="row">
       <div class="col-md-12 viewmore">
-        <a href="sub_photogallery.php"><button type="button" class="btn btn-primary viewbtn"
+        <a href="{{route('sub-photo-gallery')}}"><button type="button" class="btn btn-primary viewbtn"
             style="padding: 10px 20px; "> view more </button></a>
       </div>
     </div>
@@ -542,7 +543,7 @@ $frontphotogallerylistlimit_data) { ?>
 
     <div class="row">
       <div class="col-md-12 viewmore">
-        <a href="sub_videogallery.php"><button type="button" class="btn btn-primary viewbtn"
+        <a href="{{route('sub-vedio-gallery')}}"><button type="button" class="btn btn-primary viewbtn"
             style="padding: 10px 20px; "> view more </button></a>
       </div>
     </div>

@@ -9,7 +9,7 @@ use Validator;
 use Config;
 use App\Models\
 {
-WebCoverPhoto,Principles,WebVisionMission,WebGallaryPhoto,WebVideos,FrontProduct,Area,WebBlog,Counter,WebTestiminials
+WebCoverPhoto,Enquiry,Principles,WebVisionMission,WebGallaryPhoto,WebVideos,FrontProduct,Area,WebBlog,Counter,WebTestiminials
 };
 use Illuminate\Support\Facades\Http; 
 
@@ -30,7 +30,6 @@ class IndexController extends Controller
         // $frontphotogallerylistlimit = $this->fetchApiData($baseUrl . 'frontphotogallerylistlimit', 'get');
         // $frontphotogallerylistlimit = isset($frontphotogallerylistlimit['data']) ? $frontphotogallerylistlimit['data'] : [];
 
-        // Other variables initialization...
 
         $fronttestimonialslist=array();
         $fronttestimonialslist = $this->fronttestimonialslist();
@@ -69,6 +68,8 @@ class IndexController extends Controller
             'aboutuslist_array'
         ));
     }
+
+
 
     public function thirdmeditationlist(request $request)
     {

@@ -113,7 +113,7 @@
 </section>
 <script>
 $(document).on('click', '#saveDetails', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/frontproductreviewadd";
+  var urlGet = "{{route('frontproductreviewadd')}}";
 
   if ($("#comment").val() == '') {
     alert("Please add some review");
