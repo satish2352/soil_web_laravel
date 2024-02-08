@@ -15,9 +15,6 @@ $aboutuslist_array_data) { ?>
     <div class="col-lg-5 text-center">
       <div>
         <img src="<?php echo env('API_LINK') .$aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
-
-
-
         <p style="color: black;">
           <strong style="font-size: 23px;"><?php echo $aboutuslist_array_data['title']; ?></strong><br />
           <strong style="font-size: 17px;">
@@ -30,11 +27,7 @@ $aboutuslist_array_data) { ?>
 
     <div class="col-lg-7">
       <div class="about-content">
-        <!--     <p class="d-none d-sm-none d-md-block d-lg-block d-xl-block d-xs-none "><strong style="font-size: 23px;">Mr. Ram Mukhekar</strong><br>-->
-        <!--     <strong style="font-size: 17px;">Founder, Soil Charger Technology<br>-->
-        <!--         Nashik, Maharashtra</strong>-->
 
-        <!--</p>-->
         <p>
           <?php echo $aboutuslist_array_data['content']; ?>
         </p>
