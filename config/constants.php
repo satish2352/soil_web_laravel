@@ -10,7 +10,9 @@ $base .= '://'.$_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NAM
 
 define('PREFIX1', $base1.'finalapi_lumen/public/');
 define('BASE_PATH', $base.'/');
-define('PREFIX', $base);
+define('PREFIX1','https://finalapi.soilchargertechnology.com/public/');
+define('PREFIX', 'https://finalapi.soilchargertechnology.com/public/');
+// define('PREFIX', $base);
 define('URL_HOME', PREFIX.'home');
 
 define('DELETE_PATH', 'public/uploads/deleteimage/'); 
