@@ -44,8 +44,8 @@ class ProductController extends Controller
 
             foreach($result as $key=>$value)
             {
-                $value->photopath=Config::get('DocumentConstant.FRONTPRODUCT_CONTENT_VIEW').$value->photo;
-                $value->productphotopath=Config::get('DocumentConstant.PRODUCT_CONTENT_VIEW').$value->photo_one;
+                $value->photopath=FRONTPRODUCT_CONTENT_VIEW.$value->photo;
+                $value->productphotopath=PRODUCT_CONTENT_VIEW.$value->photo_one;
             }
             
             
