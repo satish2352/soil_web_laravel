@@ -15,7 +15,7 @@
         <div class="team-item">
           <h5>Aniket Sahane</h5>
           <p class="mb-4">Director</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team1.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team1.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -36,7 +36,7 @@
         <div class="team-item">
           <h5>Rushikesh Hadwale</h5>
           <p class="mb-4">Production Director</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team2.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team2.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -56,7 +56,7 @@
         <div class="team-item">
           <h5>Prasad Mukhekar</h5>
           <p class="mb-4">Devlopment Director</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team3.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team3.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -76,7 +76,7 @@
         <div class="team-item">
           <h5> Arun Patole</h5>
           <p class="mb-4">General Manager</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team5.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team5.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -97,7 +97,7 @@
         <div class="team-item">
           <h5>Bhausabheb Khemnar</h5>
           <p class="mb-4">Technical Expert</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team4.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team4.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
