@@ -19,8 +19,8 @@
 $frontphotogallerylistlimit_data) { ?>
 
         <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-          <img src="<?php echo $frontphotogallerylistlimit_data['photopath']; ?>" width="250px" itemprop="thumbnail"
-            alt="Image description" class="img-fluid" />
+          <img src="<?php echo env('API_LINK') .$frontphotogallerylistlimit_data['photopath']; ?>" width="250px"
+            itemprop="thumbnail" alt="Image description" class="img-fluid" />
           <div class="portfolio-overlay">
             <div class="overlay-content">
               <p class="category"></p>
@@ -40,7 +40,7 @@ $frontphotogallerylistlimit_data) { ?>
     </div>
     <div class="row">
       <div class="col-md-12 viewmore">
-        <a href="sub_photogallery.php"><button type="button" class="btn btn-primary viewbtn"
+        <a href="{{route('sub-photo-gallery')}}"><button type="button" class="btn btn-primary viewbtn"
             style="padding: 10px 20px; "> view more </button></a>
       </div>
     </div>

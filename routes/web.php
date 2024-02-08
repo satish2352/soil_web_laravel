@@ -18,7 +18,9 @@ Route::get('/vision-mission', ['as' => 'vision-mission', 'uses' => 'App\Http\Con
 Route::get('/about-us', ['as' => 'about-us', 'uses' => 'App\Http\Controllers\Website\AboutUsController@index']);
 Route::get('/our-team', ['as' => 'our-team', 'uses' => 'App\Http\Controllers\Website\OurTeamController@index']);
 Route::get('/photo-gallery', ['as' => 'photo-gallery', 'uses' => 'App\Http\Controllers\Website\PhotoGallery@index']);
+Route::get('/sub-photo-gallery', ['as' => 'sub-photo-gallery', 'uses' => 'App\Http\Controllers\Website\PhotoGallery@index2']);
 Route::get('/vedio-gallery', ['as' => 'vedio-gallery', 'uses' => 'App\Http\Controllers\Website\VideoGallery@index']);
+Route::get('/sub-vedio-gallery', ['as' => 'sub-vedio-gallery', 'uses' => 'App\Http\Controllers\Website\VideoGallery@index2']);
 Route::get('/products', ['as' => 'products', 'uses' => 'App\Http\Controllers\Website\ProductController@index']);
 Route::get('/careers', ['as' => 'careers', 'uses' => 'App\Http\Controllers\Website\CareerController@index']);
 Route::get('/blogs', ['as' => 'blogs', 'uses' => 'App\Http\Controllers\Website\BlogController@index']);

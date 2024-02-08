@@ -42,7 +42,7 @@
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mt-3">
           <div class="career-img">
-            <img src="img/career/career1.png" alt="">
+            <img src="{{asset('img/career/career1.png')}}" alt="">
           </div>
           <div class="">
             <div class="career-content">
@@ -55,7 +55,7 @@
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mb-5 mt-3">
           <div class="career-img">
-            <img src="img/career/career2.png" alt="">
+            <img src="{{asset('img/career/career2.png')}}" alt="">
           </div>
           <div class="">
             <div class="career-content">
@@ -68,7 +68,7 @@
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mb-5 mt-3">
           <div class="career-img">
-            <img src="img/career/career3.png" alt="">
+            <img src="{{asset('img/career/career3.png')}}" alt="">
           </div>
           <div class="">
             <div class="career-content">
@@ -81,9 +81,6 @@
     </div>
   </div>
 </section>
-
-
-
 
 <!--====================== Modal======================== -->
 <!-- modal1 start -->

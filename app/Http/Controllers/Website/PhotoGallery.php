@@ -19,6 +19,13 @@ class PhotoGallery extends Controller
 
         return view('website.pages.photo-gallery',compact('frontphotogallerylistlimit'));
     }
+
+    public function index2(Request $request)
+    {
+        $frontphotogallerylistlimit=$this->frontphotogallerylistlimit($request);
+
+        return view('website.pages.sub-photo-gallery',compact('frontphotogallerylistlimit'));
+    }
     public function frontphotogallerylistlimit(Request $request)
     {
         

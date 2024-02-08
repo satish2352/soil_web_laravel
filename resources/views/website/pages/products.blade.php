@@ -29,7 +29,7 @@
       <div class="col-xl-3 item <?php echo str_replace(" ","_",$frontproductlist_data['title']); ?>">
         <div class="project-item mb-5 mt-3">
           <div class="project-thumb">
-            <img src="<?php echo $frontproductlist_data['productphotopath']; ?>" alt="">
+            <img src="<?php echo env('API_LINK') .$frontproductlist_data['productphotopath']; ?>" alt="">
           </div>
           <div class="project-overlay-content">
             <div class="project-tag">

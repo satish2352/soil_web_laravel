@@ -8,7 +8,7 @@ $base1 .= '://'.$_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NA
 $base .= '://'.$_SERVER['HTTP_HOST'] . str_replace(basename($_SERVER['SCRIPT_NAME']),"",$_SERVER['SCRIPT_NAME']);
 }
 
-define('PREFIX1', $base1.'finalapi_lumen/public/');
+// define('PREFIX1', $base1.'finalapi_lumen/public/');
 define('BASE_PATH', $base.'/');
 define('PREFIX1','https://finalapi.soilchargertechnology.com/public/');
 define('PREFIX', 'https://finalapi.soilchargertechnology.com/public/');

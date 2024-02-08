@@ -15,7 +15,7 @@
       <div class="col-lg-3 col-md-6 card1">
         <div class="blog-post-item mb-30 mt-5">
           <div class="blog-post-thumb">
-            <a><img src="<?php echo $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
+            <a><img src="<?php echo env('API_LINK') . $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
           </div>
           <div class="blog-post-content">
             <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>

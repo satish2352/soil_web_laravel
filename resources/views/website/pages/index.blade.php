@@ -2,25 +2,35 @@
 
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
-    @foreach($frontsliderlist as $key => $frontsliderlistdata)
-    <li data-target="#carouselExampleCaptions" data-slide-to="{{ $key }}" class="{{ $key == 0 ? 'active' : '' }}"></li>
-    @endforeach
+    <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
+    <li data-target="#carouselExampleCaptions" data-slide-to="<?php echo $key; ?>" class="active"></li>
+    <?php  } ?>
   </ol>
 
   <div class="carousel-inner">
-    @foreach($frontsliderlist as $key => $frontsliderlistdata)
-    <div class="carousel-item {{ $key == 0 ? 'active' : '' }} banner0">
-      <img src="{{ $frontsliderlistdata['photopath'] }}" class="w-100 x mt-10" alt="..." />
+    <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
+    <div class="carousel-item <?php if($key==0) { echo "active"; } ?> banner0">
+      <!-- <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." /> -->
+      <img src="<?php echo env('API_LINK') . $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
+
       <div class="carousel-caption">
         <p class="banner-img1-1" data-aos="fade-down" data-delay=".4s">
-          {!! strip_tags($frontsliderlistdata['content']) !!}
+          <?php echo strip_tags($frontsliderlistdata['content']); ?>
         </p>
       </div>
     </div>
-    @endforeach
+    <?php } ?>
   </div>
-</div>
 
+  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -169,7 +179,7 @@ $webmarquee_array_data) { ?>
   <div class="row piller-section">
     <div class="card-wrap-piller">
       <div class="card-header-1 one">
-        <i><img src="img/dryfruits.png" width="80px" height="80px"></i>
+        <i><img src="{{asset('img/dryfruits.png')}}" width="80px" height="80px"></i>
       </div>
       <div class="card-content">
         <h1 class="card-title">Soil Charger Technology</h1>
@@ -178,7 +188,7 @@ $webmarquee_array_data) { ?>
     </div>
     <div class="card-wrap-piller">
       <div class="card-header-1 two">
-        <i class="i2"><img src="img/soil1.png" width="200px" height="150px"></i>
+        <i class="i2"><img src="{{asset('img/soil1.png')}}" width="200px" height="150px"></i>
       </div>
       <div class="card-content">
         <h1 class="card-title">Soil Charger Technology</h1>
@@ -188,7 +198,7 @@ $webmarquee_array_data) { ?>
     </div>
     <div class="card-wrap-piller">
       <div class="card-header-1 three">
-        <i><img src="img/chemicle.png" width="100px" height="100px"></i>
+        <i><img src="{{asset('img/chemicle.png')}}" width="100px" height="100px"></i>
       </div>
       <div class="card-content">
         <h1 class="card-title">Soil Charger Technology</h1>
@@ -198,7 +208,7 @@ $webmarquee_array_data) { ?>
     </div>
     <div class="card-wrap-piller">
       <div class="card-header-1 four">
-        <i><img src="img/leaficon.png" width="100px" height="100px"></i>
+        <i><img src="{{asset('img/leaficon.png')}}" width="100px" height="100px"></i>
       </div>
       <div class="card-content">
         <h1 class="card-title">Soil Charger Technology</h1>
@@ -226,7 +236,7 @@ $webmarquee_array_data) { ?>
     <div class="col-md-3">
       <ul class="p-list">
         <li class="card" style="--accent-color: #9CC623" data-toggle="modal" data-target="#principle-modal">
-          <div class="p-icon"><img src="img/i2.png"></div>
+          <div class="p-icon"><img src="{{asset('img/i2.png')}}"></div>
           <div class="m-title mt-4 mb-4">First Method</div>
 
           <?php foreach ($firstmethodlist_array  as $key =>
@@ -242,7 +252,7 @@ $firstmethodlist_array_data) { ?>
     <div class="col-md-3">
       <ul class="p-list">
         <li class="card" style="--accent-color: #F6911B" data-toggle="modal" data-target="#principle-modal-2">
-          <div class="p-icon"><a><img src="img/i4.png"></a></div>
+          <div class="p-icon"><a><img src="{{asset('img/i4.png')}}"></a></div>
           <div class="m-title">Second Rule</div>
           <?php foreach ($secondrulelist  as $key =>
 $secondrulelist_array_data) { ?>
@@ -255,7 +265,7 @@ $secondrulelist_array_data) { ?>
       <ul class="p-list">
 
         <li class="card" style="--accent-color: #9CC623" data-toggle="modal" data-target="#principle-modal-3">
-          <div class="p-icon"><a><img src="img/i2.png"></a></div>
+          <div class="p-icon"><a><img src="{{asset('img/i2.png')}}"></a></div>
           <div class="m-title">Third Meditation</div>
           <?php foreach ($thirdmeditationlist  as $key =>
 $thirdmeditationlist_array_data) { ?>
@@ -379,14 +389,9 @@ $aboutuslist_array_data) { ?>
   <div class="row mt-5">
     <div class="col-lg-5 text-center">
       <div>
-        <img src="<?php echo $aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
+        <img src="<?php echo env('API_LINK') .$aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
 
-        <!--<img src="img/d1-removebg-preview.png"  class="img-fluid">-->
 
-        <!--    <p style="color: black;"><strong style="font-size: 23px;">Mr. Ram Mukhekar</strong><br>-->
-        <!--            <strong style="font-size: 17px;">Founder, Soil Charger Technology<br>-->
-        <!--Nashik, Maharashtra</strong>-->
-        <!--    </p>-->
 
         <p style="color: black;">
           <strong style="font-size: 23px;"><?php echo $aboutuslist_array_data['title']; ?></strong><br />
@@ -426,9 +431,9 @@ $aboutuslist_array_data) { ?>
           <?php foreach ($frontvisionlist  as $key =>
 $frontvisionlist_data) { ?>
           <div class="org-frm-icon">
-            <img src="img/icon/eye.gif" alt="" srcset="" class="v_gif">
+            <img src="{{asset('img/icon/eye.gif')}}" alt="" srcset="" class="v_gif">
             <h2 class="vision-title1"><?php echo $frontvisionlist_data['title']; ?></h2>
-            <img src="img/images/organic_item_shape02.png" alt="" class="org-frm-icon-shape">
+            <img src="{{asset('img/images/organic_item_shape02.png')}}" alt="" class="org-frm-icon-shape">
           </div>
           <div class="org-frm-content">
 
@@ -444,9 +449,9 @@ $frontvisionlist_data) { ?>
           <?php foreach ($frontmissionlist  as $key =>
 $frontmissionlist_data) { ?>
           <div class="org-frm-icon">
-            <img src="img/icon/rocket.gif" alt="" srcset="" class="v_gif">
+            <img src="{{asset('img/icon/rocket.gif')}}" alt="" srcset="" class="v_gif">
             <h2 class="vision-title1"><?php echo $frontmissionlist_data['title']; ?></h2>
-            <img src="img/images/organic_item_shape02.png" alt="" class="org-frm-icon-shape">
+            <img src="{{asset('img/images/organic_item_shape02.png')}}" alt="" class="org-frm-icon-shape">
           </div>
           <div class="org-frm-content">
 
@@ -478,8 +483,8 @@ $frontmissionlist_data) { ?>
 $frontphotogallerylistlimit_data) { ?>
 
         <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-          <img src="<?php echo $frontphotogallerylistlimit_data['photopath']; ?>" width="250px" itemprop="thumbnail"
-            alt="Image description" class="img-fluid" />
+          <img src="<?php echo env('API_LINK') . $frontphotogallerylistlimit_data['photopath']; ?>" width="250px"
+            itemprop="thumbnail" alt="Image description" class="img-fluid" />
           <div class="portfolio-overlay">
             <div class="overlay-content">
               <p class="category"></p>
@@ -571,7 +576,7 @@ $frontphotogallerylistlimit_data) { ?>
       <div class="col-xl-3 item <?php echo str_replace(" ","_",$frontproductlist_data['title']); ?>">
         <div class="project-item mb-5 mt-3">
           <div class="project-thumb">
-            <img src="<?php echo $frontproductlist_data['productphotopath']; ?>" alt="">
+            <img src="<?php echo env('API_LINK') .$frontproductlist_data['productphotopath']; ?>" alt="">
           </div>
           <div class="project-overlay-content">
             <div class="project-tag">
@@ -630,7 +635,7 @@ $(document).ready(function() {
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mt-3">
           <div class="career-img">
-            <img src="img/career/career1.png" alt="">
+            <img src="{{asset('img/career/career1.png')}}" alt="">
           </div>
           <div class="">
             <div class="career-content">
@@ -643,7 +648,7 @@ $(document).ready(function() {
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mb-5 mt-3">
           <div class="career-img">
-            <img src="img/career/career2.png" alt="">
+            <img src="{{asset('img/career/career2.png')}}" alt="">
           </div>
           <div class="">
             <div class="career-content">
@@ -656,7 +661,7 @@ $(document).ready(function() {
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mb-5 mt-3">
           <div class="career-img">
-            <img src="img/career/career3.png" alt="">
+            <img src="{{asset('img/career/career3.png')}}" alt="">
           </div>
           <div class="">
             <div class="career-content">
@@ -1715,7 +1720,7 @@ $(document).on('change', '.business_taluka', function() {
       <div class="col-lg-3 col-md-6 card1">
         <div class="blog-post-item mb-30 mt-5">
           <div class="blog-post-thumb">
-            <a><img src="<?php echo $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
+            <a><img src="<?php echo env('API_LINK') . $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
           </div>
           <div class="blog-post-content">
             <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>
@@ -1790,10 +1795,10 @@ $counter_list_data) { ?>
           <div class="col-12">
             <div class="new-testimonial-item">
               <div class="new-testi-thumb">
-                <img src="<?php echo $fronttestimonialslist_data['photopath']; ?>" alt="">
+                <img src="<?php echo env('API_LINK') . $fronttestimonialslist_data['photopath']; ?>" alt="">
               </div>
               <div class="testi-leaf-img">
-                <img src="img/leaf.png" alt="" srcset="">
+                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
               </div>
               <div class="testi-icon">
                 <span><i class="fas fa-quote-left"></i></span>
@@ -1827,7 +1832,7 @@ $counter_list_data) { ?>
       <div class="col-lg-4 col-md-4 col-sm-12">
         <div class="video-iframe">
           <div class="video-bg-clr">
-            <img src="img/bg/subbanner00.png" class="v-img">
+            <img src="{{asset('img/bg/subbanner00.png')}}" class="v-img">
             <div class="video-img">
               <div class="video_play">
                 <a href=" https://www.youtube.com/watch?v=pB5BUEr5mHM&t=1s">
@@ -1928,7 +1933,7 @@ $counter_list_data) { ?>
         <div class="team-item">
           <h5>Aniket Sahane</h5>
           <p class="mb-4">Director</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team1.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team1.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -1949,7 +1954,7 @@ $counter_list_data) { ?>
         <div class="team-item">
           <h5>Rushikesh Hadwale</h5>
           <p class="mb-4">Production Director</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team2.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team2.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -1969,7 +1974,7 @@ $counter_list_data) { ?>
         <div class="team-item">
           <h5>Prasad Mukhekar</h5>
           <p class="mb-4">Devlopment Director</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team3.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team3.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -1989,7 +1994,7 @@ $counter_list_data) { ?>
         <div class="team-item">
           <h5> Arun Patole</h5>
           <p class="mb-4">General Manager</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team5.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team5.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -2010,7 +2015,7 @@ $counter_list_data) { ?>
         <div class="team-item">
           <h5>Bhausabheb Khemnar</h5>
           <p class="mb-4">Technical Expert</p>
-          <img class="img-fluid rounded-circle w-100 mb-4" src="img/team/team4.png" alt="">
+          <img class="img-fluid rounded-circle w-100 mb-4" src="{{asset('img/team/team4.png')}}" alt="">
           <div class="d-flex justify-content-center">
             <a class="btn-team btn-square text-primary bg-white m-1"
               href="https://www.facebook.com/Soil.Charger.Technology" target="_blank"><i
@@ -2047,7 +2052,7 @@ $counter_list_data) { ?>
 
           <div class="col-lg-4 col-md-4 col-sm-12 px-0 justify-content-center">
             <div class="iso-img">
-              <img src="img/iso/ISO.png" class="mx-auto vert-move" alt="" width="60%" height="auto">
+              <img src="{{asset('img/iso/ISO.png')}}" class="mx-auto vert-move" alt="" width="60%" height="auto">
             </div>
           </div>
           <div class="col-lg-8  col-md-8 col-sm-12 ">
