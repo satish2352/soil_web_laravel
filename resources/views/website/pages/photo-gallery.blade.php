@@ -18,15 +18,15 @@
         <?php foreach ($frontphotogallerylistlimit  as $key => $frontphotogallerylistlimit_data) { ?>
 
         <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-          <img src="{{ env('API_LINK').$frontphotogallerylistlimit_data['photopath'] }}" width="250px"
-            itemprop="thumbnail" alt="Image description" class="img-fluid" />
+          <img src="{{ $frontphotogallerylistlimit_data['photopath'] }}" width="250px" itemprop="thumbnail"
+            alt="Image description" class="img-fluid" />
           <div class="portfolio-overlay">
             <div class="overlay-content">
               <p class="category"></p>
               <a href="#" title="<?php echo $frontphotogallerylistlimit_data['title']; ?>" target="_blank">
               </a>
               <a data-fancybox="item" title="click to zoom-in"
-                href="<?php echo env('API_LINK') .$frontphotogallerylistlimit_data['photopath']; ?>">
+                href="<?php echo $frontphotogallerylistlimit_data['photopath']; ?>">
                 <div class="magnify-icon">
                   <p><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></p>
                 </div>
