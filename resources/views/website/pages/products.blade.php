@@ -6,6 +6,8 @@
     <div class="row justify-content-center">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="section-title text-center mb-50">
+          <h1 style="margin-top:100px;"></h1>
+
           <h2 class="title mb-2"><span>Our</span> Products</h2>
           <p>Increase the soil fertility and strength of plant. Healthy plant development is our main aim. From last
             three years our technology experts Mr. Ram Mukhekar ji is educating and train farmers and want to make them
@@ -36,8 +38,8 @@
               <a href="sub_product.php"><?php echo $frontproductlist_data['title']; ?></a>
             </div>
             <div class="project-content">
-              <a href="{{ route('sub-products', ['prod' => $frontproductlist_data['id'] ])}}"
-                type="button" class="btn">Read More</a>
+              <a href="{{ route('sub-products', ['prod' => $frontproductlist_data['id'] ])}}" type="button"
+                class="btn">Read More</a>
             </div>
 
           </div>

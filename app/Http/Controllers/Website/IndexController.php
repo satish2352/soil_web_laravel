@@ -46,7 +46,7 @@ class IndexController extends Controller
         $firstmethodlist_array=[];
         $secondrulelist=$this->secondrulelist($request);
         $thirdmeditationlist=$this->thirdmeditationlist($request);
-        $aboutuslist_array=[];
+        $aboutuslist_array = $this->frontaboutuslist($request);
         $fronhreftphotogallerylistlimit_data =[];
         $fronhreftphotogallerylistlimit_data['title']="";
         return view('website.pages.index', compact(
@@ -171,6 +171,16 @@ class IndexController extends Controller
             return $result;
     }
 
+    public function frontaboutuslist(Request $request)
+    {
+       
+            $result = WebAboutUs::where('status','0')->orderBy('id', 'DESC')->get();
+            foreach($result as $key=>$value)
+            {
+                $value->photopath=ABOUT_US_PHOTO_VIEW.$value->photo_one;
+            }
+            return $result;
+    }
     public function statelist(Request $request)
     {
         $result = Area::where('location_type', '=', 1)->orderBy('name', 'ASC')->get();
