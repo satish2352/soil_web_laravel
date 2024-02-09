@@ -4,7 +4,6 @@
 <style>
 p {
   font-size: 14px;
-  font-weight: 500;
   line-height: 28px;
   color: black;
   margin-bottom: 15px;
@@ -25,7 +24,7 @@ p {
           <h2>Product</h2>
           <nav aria-label="breadcrumb">
             <ol class="breadcrumb">
-              <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
               <li class="breadcrumb-item active" aria-current="page">Product</li>
             </ol>
           </nav>
@@ -78,70 +77,72 @@ p {
         <!-- Tabs content -->
         <div class="tab-content" id="v-pills-tabContent">
           <?php foreach ($frontproductlist as $key => $frontproductlist_data) {?>
-          <div class="tab-pane fade  rounded bg-white show <?php if($key==0) { echo "active"; } ?> p-5"
+          <div class="tab-pane fade rounded bg-white show <?php if($key==0) { echo "active"; } ?> p-5"
             id="product_<?php echo $key; ?>" role="tabpanel" aria-labelledby="soilcharger-tab">
             <h4 class="mb-4"><?php echo $frontproductlist_data['title']; ?></h4>
-            <div class="row s_product_img imges">
+            <div class="row s_product_img">
               <div class="col-lg-4 col-md-4 col-sm-6">
-                <img src="<?php echo env('API_LINK') .$frontproductlist_data['productphotopath']; ?>" alt="" srcset="">
+                <img src="<?php echo env('API_LINK') . $frontproductlist_data['productphotopath']; ?>" alt="" srcset="">
               </div>
               <div class="col-lg-8 col-md-8 col-sm-6">
                 <p><?php echo $frontproductlist_data['short_description']; ?></p>
+                <div class="row">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <h4>Product Description:</h4>
+                  </div>
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+                    <?php echo $frontproductlist_data['additional_info']; ?>
+                  </div>
+                </div>
               </div>
-              <div class="row">
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <h4>Product Description:</h4>
-                </div>
-                <div class="col-lg-12 col-md-12 col-sm-12">
-                  <?php echo $frontproductlist_data['additional_info']; ?>
-                </div>
+            </div>
+            <div class="row mt-2">
+              <div class="col-lg-12">
+                <h4>Additional Information</h4>
+                <?php echo $frontproductlist_data['additional_info']; ?>
+              </div>
+              <div class="col-lg-12 mt-2">
+                <h6>Reviews</h6>
+              </div>
+              <div class="col-lg-2 col-md-2 col-sm-2 mt-2">
+                <img src="{{ asset('img/product/review.jpg') }}" alt="">
+              </div>
+              <div class="col-lg-10 col-md-10 col-sm-10 mt-2">
+                <p><?php echo $frontproductlist_data['review_person_name']; ?></p>
+                <p><?php echo $frontproductlist_data['review']; ?></p>
+              </div>
+              <div class="col-lg-12 mt-2">
+                <h6>Add A Review</h6>
+                <form id="submit_review">
+                  <div class="form-row">
+                    <div class="col">
+                      <input type="hidden" class="form-control" id="product_id" name="product_id"
+                        value="<?php echo $frontproductlist_data['id']; ?>">
+                      <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
+                        required="required">
+                    </div>
+                    <div class="col">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Your Email Address"
+                        required="required">
+                    </div>
+                    <div class="col-12 mt-3">
+                      <textarea class="form-control" id="comment" name="comment" rows="3"
+                        placeholder="Write Your Comments Here..." required="required"></textarea>
+                    </div>
+                    <div class="col-12 mt-2 s_product_btn d-flex justify-content-center">
+                      <input type="button" id="saveDetails" class="s_product_btn_new" value="Send Review">
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-          <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
-              <h4>Additional Information</h4>
-              <?php echo $frontproductlist_data['additional_info']; ?>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
-              <h6> Reviews</h6>
-            </div>
-            <div class="col-lg-2 col-md-2 col-sm-2 mt-2">
-              <img src="{{asset('img/product/review.jpg')}}" alt="">
-            </div>
-            <div class="col-lg-10 col-md-10 col-sm-10 mt-2">
-              <p> <?php echo $frontproductlist_data['review_person_name']; ?></p>
-              <p> <?php echo $frontproductlist_data['review']; ?></p>
-            </div>
-            <div class="col-lg-12 col-md-12 col-sm-12 mt-2">
-              <h6>Add A Reviews</h6>
-              <form id="submit_review">
-                <div class="form-row">
-                  <div class="col">
-                    <input type="hidden" class="form-control" id="product_id" name="product_id"
-                      value="<?php echo $frontproductlist_data['id']; ?>">
-                    <input type="text" class="form-control" id="name" name="name" placeholder="Your Name"
-                      required="required">
-                  </div>
-                  <div class="col">
-                    <input type="email" class="form-control" placeholder="Your Email address" id="email" name="email"
-                      required="required">
-                  </div>
-                  <div class="col-12">
-                    <textarea class="form-control mt-3" id="comment" rows="3" placeholder="Write Your Comments Here.."
-                      required="required"></textarea>
-                  </div>
-                  <div class="col-12 mt-2 s_product_btn d-flex justify-content-center">
-                    <input type="button" id="saveDetails" class="s_product_btn_new" value="Send Review">
-                  </div>
-                </div>
-              </form>
-            </div>
-          </div>
+          <?php }?>
         </div>
-        <?php }?>
       </div>
+
     </div>
+  </div>
   </div>
 </section>
 <script>

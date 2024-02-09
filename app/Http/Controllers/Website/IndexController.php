@@ -9,7 +9,7 @@ use Validator;
 use Config;
 use App\Models\
 {
-WebCoverPhoto,Enquiry,Principles,WebVisionMission,WebGallaryPhoto,WebVideos,FrontProduct,Area,WebBlog,Counter,WebTestiminials
+WebCoverPhoto,Enquiry,Principles,WebAboutUs,WebVisionMission,WebGallaryPhoto,WebVideos,FrontProduct,Area,WebBlog,Counter,WebTestiminials
 };
 use Illuminate\Support\Facades\Http; 
 
