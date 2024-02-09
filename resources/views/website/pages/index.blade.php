@@ -584,8 +584,8 @@ $frontphotogallerylistlimit_data) { ?>
               <a href="sub_product.php"><?php echo $frontproductlist_data['title']; ?></a>
             </div>
             <div class="project-content">
-              <a href="sub_product.php?prod=<?php echo str_replace(" ","_",$frontproductlist_data['title']); ?>"
-                type="button" class="btn">Read More</a>
+              <a href="{{ route('sub-products', ['prod' => $frontproductlist_data['id'] ])}}" type="button"
+                class="btn">Read More</a>
             </div>
           </div>
         </div>
