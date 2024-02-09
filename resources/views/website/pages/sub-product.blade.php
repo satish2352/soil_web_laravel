@@ -80,7 +80,7 @@ p {
           <div class="tab-pane fade rounded bg-white show <?php if($key==0) { echo "active"; } ?> p-5"
             id="product_<?php echo $key; ?>" role="tabpanel" aria-labelledby="soilcharger-tab">
             <h4 class="mb-4"><?php echo $frontproductlist_data['title']; ?></h4>
-            <div class="row s_product_img">
+            <div class="row s_product_img imges">
               <div class="col-lg-4 col-md-4 col-sm-6">
                 <img src="<?php echo env('API_LINK') . $frontproductlist_data['productphotopath']; ?>" alt="" srcset="">
               </div>
