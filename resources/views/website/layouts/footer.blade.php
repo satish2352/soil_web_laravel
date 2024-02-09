@@ -87,7 +87,7 @@
           <div class="footer-contact">
             <h5><i class="fas fa-envelope-open"></i>Mails : </h5>
             <ul>
-              <li><span>For Officals &nbsp;: </span><a href="mailto:soilchargertec@gmail.com"
+              <li><span>For Officials &nbsp;: </span><a href="mailto:soilchargertec@gmail.com"
                   style="color: #b5b6b7">soilchargertec@gmail.com</a></li>
               <li><span>For Sales &nbsp;&nbsp;&nbsp;&nbsp;: </span><a href="mailto:salessoiltec1@gmail.com"
                   style="color: #b5b6b7">salessoiltec1@gmail.com</a></li>
