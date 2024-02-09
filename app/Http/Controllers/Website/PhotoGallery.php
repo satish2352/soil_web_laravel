@@ -35,7 +35,7 @@ class PhotoGallery extends Controller
             $result = WebGallaryPhoto::where('status','0')->orderBy('id', 'DESC')->LIMIT(20)->get();
             foreach($result as $key=>$value)
             {
-                $value->photopath=WEB_GALLARY_PHOTO_VIEW.$value->photo_one;
+                $value->photopath=$value->photo_one;
             }
             return $result;
     }
