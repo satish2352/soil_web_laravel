@@ -189,7 +189,7 @@
     </div>
   </header>
   <?php 
-         $url = "https://soilchargertechnology.com/api/api/";      
+         $url = "https://finalapi.soilchargertechnology.com/api/";      
          
          function CallAPI($method, $url, $data = false)
          {

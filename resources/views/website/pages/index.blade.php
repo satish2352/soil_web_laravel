@@ -1349,7 +1349,7 @@ $("form#internship_form").submit(function(e) {
   $(".preloader").show();
   e.preventDefault();
   var formData = new FormData(this);
-  var urlGet = "https://soilchargertechnology.com/api/api/frontinternshipadd";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/frontinternshipadd";
   $.ajax({
     url: urlGet,
     type: 'POST',
@@ -1400,7 +1400,7 @@ $("form#distributor_form").submit(function(e) {
   e.preventDefault();
   var formData = new FormData(this);
 
-  var urlGet = "https://soilchargertechnology.com/api/api/frontdistributorregistration";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/frontdistributorregistration";
   $.ajax({
     url: urlGet,
     type: 'POST',
@@ -1451,7 +1451,7 @@ $("form#employment_form").submit(function(e) {
   $(".preloader").show();
   e.preventDefault();
   var formData = new FormData(this);
-  var urlGet = "https://soilchargertechnology.com/api/api/frontjobpostingadd";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/frontjobpostingadd";
   $.ajax({
     url: urlGet,
     type: 'POST',
@@ -1498,7 +1498,7 @@ $("form#employment_form").submit(function(e) {
 
 
 $(document).on('change', '.personal_state', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/districtlist";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/districtlist";
   $.ajax({
     type: "POST",
     url: urlGet,
@@ -1532,7 +1532,7 @@ $(document).on('change', '.personal_state', function() {
 });
 
 $(document).on('change', '.personal_dist', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/talukalist";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/talukalist";
   $.ajax({
     type: "POST",
     url: urlGet,
@@ -1566,7 +1566,7 @@ $(document).on('change', '.personal_dist', function() {
 });
 
 $(document).on('change', '.personal_taluka', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/villagelist";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/villagelist";
   $.ajax({
     type: "POST",
     url: urlGet,
@@ -1604,7 +1604,7 @@ $(document).on('change', '.personal_taluka', function() {
 
 
 $(document).on('change', '.business_state', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/districtlist";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/districtlist";
 
   $.ajax({
     type: "POST",
@@ -1639,7 +1639,7 @@ $(document).on('change', '.business_state', function() {
 });
 
 $(document).on('change', '.business_district', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/talukalist";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/talukalist";
 
   $.ajax({
     type: "POST",
@@ -1674,7 +1674,7 @@ $(document).on('change', '.business_district', function() {
 });
 
 $(document).on('change', '.business_taluka', function() {
-  var urlGet = "https://soilchargertechnology.com/api/api/villagelist";
+  var urlGet = "https://finalapi.soilchargertechnology.com/api/villagelist";
   $.ajax({
     type: "POST",
     url: urlGet,
