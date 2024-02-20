@@ -26,7 +26,7 @@
               <a href="#" title="<?php echo $frontphotogallerylistlimit_data['title']; ?>" target="_blank">
               </a>
               <a data-fancybox="item" title="click to zoom-in"
-                href="<?php echo env('API_LINK') .$frontphotogallerylistlimit_data['photopath']; ?>">
+                href="<?php echo $frontphotogallerylistlimit_data['photopath']; ?>">
                 <div class="magnify-icon">
                   <p><span><i class="fa fa-search-plus" aria-hidden="true"></i></span></p>
                 </div>

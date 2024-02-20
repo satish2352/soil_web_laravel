@@ -14,7 +14,7 @@ $aboutuslist_array_data) { ?>
   <div class="row mt-5">
     <div class="col-lg-5 text-center">
       <div>
-        <img src="<?php echo env('API_LINK') .$aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
+        <img src="<?php echo $aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
         <p style="color: black;">
           <strong style="font-size: 23px;"><?php echo $aboutuslist_array_data['title']; ?></strong><br />
           <strong style="font-size: 17px;">

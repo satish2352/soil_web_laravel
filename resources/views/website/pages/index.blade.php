@@ -11,7 +11,7 @@
     <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
     <div class="carousel-item <?php if($key==0) { echo "active"; } ?> banner0">
       <!-- <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." /> -->
-      <img src="<?php echo env('API_LINK') . $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
+      <img src="<?php echo  $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
 
       <div class="carousel-caption">
         <p class="banner-img1-1" data-aos="fade-down" data-delay=".4s">
@@ -390,7 +390,7 @@ $aboutuslist_array_data) { ?>
   <div class="row mt-5">
     <div class="col-lg-5 text-center">
       <div>
-        <img src="<?php echo env('API_LINK') .$aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
+        <img src="<?php echo $aboutuslist_array_data['photopath']; ?>" class="img-fluid" />
 
 
 
@@ -484,7 +484,7 @@ $frontmissionlist_data) { ?>
 $frontphotogallerylistlimit_data) { ?>
 
         <li class="mix dev col-xl-3 col-md-4 col-12 col-sm-6 pd">
-          <img src="<?php echo env('API_LINK') . $frontphotogallerylistlimit_data['photopath']; ?>" width="250px"
+          <img src="<?php echo $frontphotogallerylistlimit_data['photopath']; ?>" width="250px"
             itemprop="thumbnail" alt="Image description" class="img-fluid" />
           <div class="portfolio-overlay">
             <div class="overlay-content">
@@ -577,7 +577,7 @@ $frontphotogallerylistlimit_data) { ?>
       <div class="col-xl-3 item <?php echo str_replace(" ","_",$frontproductlist_data['title']); ?>">
         <div class="project-item mb-5 mt-3">
           <div class="project-thumb">
-            <img src="<?php echo env('API_LINK') .$frontproductlist_data['productphotopath']; ?>" alt="">
+            <img src="<?php echo $frontproductlist_data['productphotopath']; ?>" alt="">
           </div>
           <div class="project-overlay-content">
             <div class="project-tag">
@@ -1721,7 +1721,7 @@ $(document).on('change', '.business_taluka', function() {
       <div class="col-lg-3 col-md-6 card1">
         <div class="blog-post-item mb-30 mt-5">
           <div class="blog-post-thumb">
-            <a><img src="<?php echo env('API_LINK') . $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
+            <a><img src="<?php echo  $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
           </div>
           <div class="blog-post-content">
             <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>
@@ -1796,7 +1796,7 @@ $counter_list_data) { ?>
           <div class="col-12">
             <div class="new-testimonial-item">
               <div class="new-testi-thumb">
-                <img src="<?php echo env('API_LINK') . $fronttestimonialslist_data['photopath']; ?>" alt="">
+                <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
               </div>
               <div class="testi-leaf-img">
                 <img src="{{asset('img/leaf.png')}}" alt="" srcset="">

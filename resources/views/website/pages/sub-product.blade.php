@@ -82,7 +82,7 @@ p {
             <h4 class="mb-4"><?php echo $frontproductlist_data['title']; ?></h4>
             <div class="row s_product_img imges">
               <div class="col-lg-4 col-md-4 col-sm-6">
-                <img src="<?php echo env('API_LINK') . $frontproductlist_data['productphotopath']; ?>" alt="" srcset="">
+                <img src="<?php echo  $frontproductlist_data['productphotopath']; ?>" alt="" srcset="">
               </div>
               <div class="col-lg-8 col-md-8 col-sm-6">
                 <p><?php echo $frontproductlist_data['short_description']; ?></p>
