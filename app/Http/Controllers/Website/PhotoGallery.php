@@ -23,6 +23,10 @@ class PhotoGallery extends Controller
     public function index2(Request $request)
     {
         $gallarylist_array = $this->frontphotogallerylistlimit($request);
+        foreach($gallarylist_array as $key=>$value)
+        {
+            $value->photopath=WEB_GALLARY_PHOTO_VIEW.$value->photo_one;
+        }
 
         return view('website.pages.sub-photo-gallery',compact('gallarylist_array'));
     }
@@ -35,7 +39,7 @@ class PhotoGallery extends Controller
             $result = WebGallaryPhoto::where('status','0')->orderBy('id', 'DESC')->LIMIT(20)->get();
             foreach($result as $key=>$value)
             {
-                $value->photopath=$value->photo_one;
+                $value->photopath=WEB_GALLARY_PHOTO_VIEW.$value->photo_one;
             }
             return $result;
     }
