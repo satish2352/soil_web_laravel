@@ -16,6 +16,11 @@ class PhotoGallery extends Controller
     public function index(Request $request)
     {
         $frontphotogallerylistlimit=$this->frontphotogallerylistlimit($request);
+        foreach($frontphotogallerylistlimit as $key=>$value)
+        {
+            $value->photopath=WEB_GALLARY_PHOTO_VIEW.$value->photo_one;
+        }
+
 
         return view('website.pages.photo-gallery',compact('frontphotogallerylistlimit'));
     }
