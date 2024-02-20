@@ -43,7 +43,7 @@ class IndexController extends Controller
         $frontvisionlist=$this->frontvisionlist($request);
         $frontsliderlist=$this->frontsliderlist($request);
         $webmarquee_array=[];
-        $firstmethodlist_array=[];
+        $firstmethodlist_array=$this->firstrulelist($request);
         $secondrulelist=$this->secondrulelist($request);
         $thirdmeditationlist=$this->thirdmeditationlist($request);
         $aboutuslist_array = $this->frontaboutuslist($request);
@@ -69,6 +69,13 @@ class IndexController extends Controller
         ));
     }
 
+
+    public function firstrulelist(Request $request)
+    {
+        
+        $result = Principles::select('first_rule','first_rule_heading')->get();
+        return $result;
+    }
 
 
     public function thirdmeditationlist(request $request)
