@@ -242,7 +242,7 @@ $webmarquee_array_data) { ?>
 
           <?php foreach ($firstmethodlist_array  as $key =>
 $firstmethodlist_array_data) { ?>
-          <div class="content-1 text-center mt-4 mb-4"><?php echo $firstmethodlist_array_data['first_rule']; ?></div>
+          <div class="content-1 text-center mt-4 mb-4"><?php echo $firstmethodlist_array_data['first_method']; ?></div>
           <?php } ?>
 
         </li>

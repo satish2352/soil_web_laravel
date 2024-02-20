@@ -73,7 +73,7 @@ class IndexController extends Controller
     public function firstrulelist(Request $request)
     {
         
-        $result = Principles::select('first_rule','first_rule_heading')->get();
+        $result = Principles::select('first_method','first_method_heading')->get();
         return $result;
     }
 
