@@ -170,14 +170,8 @@ class CareerController extends Controller
             $users->save();
             
             
-        $idLastInserted=$users->id;
+            $idLastInserted=$users->id;
         $imagedataPath=FRONT_DISTRIBUTOR_OWN_DOCUMENTS;
-
-            if ( !is_dir( $imagedataPath) ) 
-                {
-                    mkdir( $imagedataPath, 0755, true );       
-                }
-        
         $photoName=$idLastInserted."_aadhar_card_image_front";
         $inputfilenametoupload='aadhar_card_image_front';
         
@@ -238,6 +232,8 @@ class CareerController extends Controller
             if($request->created_by){
                 $this->checkLevelofDistributor($request->created_by);
             }
+            
+             
             
             if ($users) {
             return redirect()->back()->with('success', 'Data has been successfully stored.');
