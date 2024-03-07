@@ -8,7 +8,7 @@
 }
 .ag_portfolio_logo img {
 	width: 100%;
-	height: 50%;
+	height: 300px%;
 }
 .ag_portfolio_inform_2 {
 	position: absolute;
