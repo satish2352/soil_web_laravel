@@ -526,7 +526,7 @@ $frontphotogallerylistlimit_data) { ?>
   <div class="container">
     <ul class="row portfolio-item1">
 
-      @foreach($webvideo_educationallimit as $key =>
+      @foreach($webvideo_educationallimit as 
  $webvideo_educationallimit_data) 
 
       <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
