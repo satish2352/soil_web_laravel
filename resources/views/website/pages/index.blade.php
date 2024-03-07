@@ -1747,23 +1747,23 @@ $counter_list_data) { ?> -->
         <!-- <div class="icon-box"></div> --><i class=" fa fa-male count-icon "></i>
         <div class="hr-b"></div>
 
-        <p class="head2" data-max="{{$counter_list_data['farmer_count']}}">+<br>FARMER</p>
+        <p class="head2" data-max="{{$counter_list_data['farmer_count']}}">{{$counter_list_data['farmer_count']}} +<br>FARMER</p>
       </div>
       <div class="col-sm-2 my-3">
         <!-- <div class="icon-box"></div> --><i class="fab fa-youtube count-icon"></i>
         <div class="hr-b"></div>
-        <p class="head2" data-max="{{$counter_list_data['youtube_sus_count']}}">K <br>YOUTUBE SUBSCRIBER</p>
+        <p class="head2" data-max="{{$counter_list_data['youtube_sus_count']}}">{{$counter_list_data['youtube_sus_count']}} K <br>YOUTUBE SUBSCRIBER</p>
       </div>
       <div class="col-sm-2 my-3">
         <!-- <div class="icon-box"></div> --><i class="fa fa-download count-icon"></i>
         <div class="hr-b"></div>
-        <p class="head2" data-max="{{$counter_list_data['app_down_count']}}">K<br> APP DOWNLOAD</p>
+        <p class="head2" data-max="{{$counter_list_data['app_down_count']}}">{{$counter_list_data['app_down_count']}} K<br> APP DOWNLOAD</p>
       </div>
       <div class="col-sm-2 my-3">
         <!-- <div class="icon-box"></div> --><i class=" fa fa-handshake count-icon"></i>
         <div class="hr-b"></div>
 
-        <p class="head2" data-max="{{$counter_list_data['sem_meet_count']}}" id="test"><br>SEMINAR MEETING
+        <p class="head2" data-max="{{$counter_list_data['sem_meet_count']}}" id="test">{{$counter_list_data['sem_meet_count']}} <br>SEMINAR MEETING
         </p>
       </div>
       <div class="col-sm-2 my-3">
