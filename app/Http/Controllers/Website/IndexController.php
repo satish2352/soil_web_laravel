@@ -143,7 +143,6 @@ class IndexController extends Controller
     {
          
             $targetvideo = WebVideos::where('status',0)->where('category','Educational')->orderBy('id', 'DESC')->LIMIT(8)->get();
-            dd($targetvideo);
             return $targetvideo;
     }
 
