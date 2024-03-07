@@ -1742,7 +1742,7 @@ $(document).on('change', '.business_taluka', function() {
       <div class="col-sm-1"></div>
       <!-- <?php foreach ($counter_list  as $key =>
 $counter_list_data) { ?> -->
-{{dd($counter_list_data)}}
+{{dd($counter_list_data['farmer_count'])}}
       <div class="col-sm-2 my-3">
         <!-- <div class="icon-box"></div> --><i class=" fa fa-male count-icon "></i>
         <div class="hr-b"></div>
