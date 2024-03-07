@@ -41,103 +41,28 @@
   </div>
   <div class="container">
     <ul class="row portfolio-item1">
+
+      <?php foreach ($webvideo_educationallimit as $key =>
+ $webvideo_educationallimit_data) {?>
+
       <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
+        <iframe width="280" height="190"
+          src="https://www.youtube.com/embed/<?php echo $webvideo_educationallimit_data['url']; ?>"
+          title="YouTube video player" frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen></iframe>
       </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/dg7PjY9rJxw?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=13"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
+      <?php }?>
 
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
 
-      </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/dg7PjY9rJxw?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=13"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/dg7PjY9rJxw?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=13"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/dg7PjY9rJxw?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=13"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix web col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/dg7PjY9rJxw?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=13"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
-      <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
-        <iframe style="width: 280px; height: 190px;"
-          src="https://www.youtube.com/embed/4o6TTbOjQLg?enablejsapi=1&origin=https%3A%2F%2Fwww.soilchargertechnology.com&widgetid=1"
-          width="250px" itemprop="thumbnail" alt="Image description"></iframe>
-
-      </li>
     </ul>
+
+    <div class="row">
+      <div class="col-md-12 viewmore">
+        <a href="{{route('sub-vedio-gallery')}}"><button type="button" class="btn btn-primary viewbtn"
+            style="padding: 10px 20px; "> view more </button></a>
+      </div>
+    </div>
   </div>
 
 
