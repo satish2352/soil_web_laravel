@@ -1,6 +1,39 @@
 @extends('website.layouts.master')
 
 @section('content')
+
+<style type="text/css">
+.ag_portfolio_logo {
+	position: relative;
+}
+.ag_portfolio_logo img {
+	width: 100%;
+	height: auto;
+}
+.ag_portfolio_inform_2 {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width:100%;
+}
+.ag_portfolio_inform_2 > .container {
+	position: relative;
+}
+.ag_portfolio_inform {
+
+}
+.ag_portfolio_inform .breadcrumb {
+	padding: 8px 15px 8px 0;
+	border-radius: 0;
+	background-color: transparent;
+
+}
+.ag_portfolio_inform .breadcrumb li a {
+	font-size: 15px;
+	color: #000;
+}
+
+</style>
 <!-- <section class="breadcrumb-area breadcrumb-bg" data-background="{{asset('img/bg/subbanner.jpg')}}">
   <div class="container">
     <div class="row mx-0">
