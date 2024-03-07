@@ -8,7 +8,7 @@
 }
 .ag_portfolio_logo img {
 	width: 100%;
-	height: auto;
+	height: 50%;
 }
 .ag_portfolio_inform_2 {
 	position: absolute;
@@ -60,8 +60,7 @@
             <div class="ag_portfolio_inform">
               <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li class="active">Globuz</li>
+                <li class="active">Video Gallery</li>
               </ol>
             </div>
           </div>
