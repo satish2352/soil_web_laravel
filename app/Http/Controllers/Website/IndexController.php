@@ -215,6 +215,7 @@ class IndexController extends Controller
     public function counter_list()
     {
             $result = Counter::where('is_deleted','no')->orderBy('id', 'DESC')->get();
+            dd($result);
             return $result;
     }
  
