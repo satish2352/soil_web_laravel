@@ -143,6 +143,7 @@ class IndexController extends Controller
     {
          
             $targetvideo = WebVideos::where('status',0)->where('category','Educational')->orderBy('id', 'DESC')->LIMIT(8)->get();
+            dd($targetvideo);
             return $targetvideo;
     }
 
@@ -215,7 +216,6 @@ class IndexController extends Controller
     public function counter_list()
     {
             $result = Counter::where('is_deleted','no')->orderBy('id', 'DESC')->get();
-            dd($result);
             return $result;
     }
  

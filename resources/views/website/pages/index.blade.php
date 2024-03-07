@@ -1740,9 +1740,7 @@ $(document).on('change', '.business_taluka', function() {
   <div class="container-fluid text-center bg-img">
     <div class="row">
       <div class="col-sm-1"></div>
-      <?php foreach ($counter_list  as $key =>
-$counter_list_data) { ?>
-
+     
       <div class="col-sm-2 my-3">
         <!-- <div class="icon-box"></div> --><i class=" fa fa-male count-icon "></i>
         <div class="hr-b"></div>
@@ -1771,7 +1769,7 @@ $counter_list_data) { ?>
         <div class="hr-b"></div>
         <p class="head2" data-max="<?php echo $counter_list_data['distributor_count']; ?>" id="test"><br>DISTRIBUTOR</p>
       </div>
-      <?php } ?>
+
       <div class="col-sm-1"></div>
     </div>
   </div>
