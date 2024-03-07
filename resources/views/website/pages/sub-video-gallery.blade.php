@@ -59,8 +59,8 @@
           <div class="container">
             <div class="ag_portfolio_inform">
               <ol class="breadcrumb">
-                <li><a href="#">Home</a></li>
-                <li class="active">Video Gallery</li>
+                <!-- <li><a href="#">Home</a></li>
+                <li class="active">Video Gallery</li> -->
               </ol>
             </div>
           </div>
