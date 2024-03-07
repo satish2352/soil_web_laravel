@@ -526,19 +526,17 @@ $frontphotogallerylistlimit_data) { ?>
   <div class="container">
     <ul class="row portfolio-item1">
 
-      <?php foreach ($webvideo_educationallimit as $key =>
- $webvideo_educationallimit_data) {?>
+      @foreach($webvideo_educationallimit as $key =>
+ $webvideo_educationallimit_data) 
 
       <li class="mix col-xl-3 col-md-4 col-12 col-sm-6 pd">
         <iframe width="280" height="190"
-          src="https://www.youtube.com/embed/<?php echo $webvideo_educationallimit_data['url']; ?>"
+          src="https://www.youtube.com/embed/{{$webvideo_educationallimit_data['url']}}"
           title="YouTube video player" frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen></iframe>
       </li>
-      <?php }?>
-
-
+      @foreach
     </ul>
 
     <div class="row">
