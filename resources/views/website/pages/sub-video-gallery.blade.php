@@ -1,7 +1,7 @@
 @extends('website.layouts.master')
 
 @section('content')
-<section class="breadcrumb-area breadcrumb-bg" data-background="{{asset('img/bg/subbanner.jpg')}}">
+<!-- <section class="breadcrumb-area breadcrumb-bg" data-background="{{asset('img/bg/subbanner.jpg')}}">
   <div class="container">
     <div class="row mx-0">
       <div class="col-12">
@@ -17,7 +17,24 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
+
+<section>
+<div class="ag_portfolio_logo">
+        <img src="{{asset('img/bg/subbanner.jpg')}}" alt="">
+        <div class="ag_portfolio_inform_2">
+          <div class="container">
+            <div class="ag_portfolio_inform">
+              <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li class="active">Globuz</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
 <!-- slider-area-end -->
 
 <!-- Rupali Video Gallery -->
