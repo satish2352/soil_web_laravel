@@ -130,7 +130,7 @@
                       </ul>
                     </li>
                     <li><a href="{{route('products')}}">Products</a></li>
-                    <li><a href="#">Export</a></li>
+                    <!-- <li><a href="#">Export</a></li> -->
                     <li class="dropdown"><a>Career</a>
                       <ul class="submenu">
                         <li><a href="{{route('careers')}}">Internship</a></li>
@@ -139,7 +139,7 @@
                       </ul>
                     </li>
                     <li><a href="{{route('blogs')}}">Blog</a></li>
-                    <li><a href="#">Distributors</a></li>
+                    <!-- <li><a href="#">Distributors</a></li> -->
                     <li><a href="#Footer">Contact</a></li>
                     <li class="dropdown"><a>Language</a>
                       <ul class="submenu lang-menu">
