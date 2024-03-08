@@ -1787,28 +1787,20 @@ $counter_list_data) { ?> -->
       </div>
     </div>
     <div class="row">
+      <div class="col-lg-8">
+        <div class="row new-testimonial-active">
 
-    <div class="col-lg-8">
+        <div class="col-12">
 
-    <!--  -->
-    <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-  <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
-    <li data-target="#carouselExampleCaptions" data-slide-to="<?php echo $key; ?>" class="active"></li>
-    <?php  } ?>
-  </ol>
-  <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
-  <div class="carousel-inner">
-   
- 
-            <div class="row new-testimonial-active">
-            <div class="col-12">
+          <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
+         
             <div class="new-testimonial-item">
-           
               <div class="new-testi-thumb">
                 <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
               </div>
-             
+              <div class="testi-leaf-img">
+                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
+              </div>
               <div class="testi-icon">
                 <span><i class="fas fa-quote-left"></i></span>
               </div>
@@ -1823,29 +1815,11 @@ $counter_list_data) { ?> -->
                   <!-- <span>plant expert</span> -->
                 </div>
               </div>
-           </div>
             </div>
-            </div>
-
           
-  </div>
-  <?php }?>
-  <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-
-</div>
-
-
-
-    <!--  -->
-    
+          <?php }?>
+          </div>
+        </div>
 
 
         <div class="row mt-5">
