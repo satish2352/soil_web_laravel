@@ -297,25 +297,25 @@
 
 
 <!-- JS here -->
-<script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
-<script src="js/vendor/jquery-3.5.0.min.js"></script>
-<script src="js/popper.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/isotope.pkgd.min.js"></script>
-<script src="js/imagesloaded.pkgd.min.js"></script>
-<script src="js/jquery.magnific-popup.min.js"></script>
-<script src="js/owl.carousel.min.js"></script>
-<script src="js/jquery.odometer.min.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/jquery.countdown.min.js"></script>
-<script src="js/paroller.js"></script>
-<script src="js/slick.min.js"></script>
-<script src="js/ajax-form.js"></script>
-<script src="js/wow.min.js"></script>
-<script src="js/jquery-ui.js"></script>
-<script src="js/aos.js"></script>
-<script src="js/plugins.js"></script>
-<script src="js/main.js"></script>
+ <!-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/jquery-3.5.0.min.js"></script> -->
+ <script src="{{ asset('js/popper.min.js')}}"></script>
+        <script src="{{ asset('js/bootstrap.min.js')}}"></script>
+        <script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
+        <script src="{{ asset('js/imagesloaded.pkgd.min.js')}}"></script>
+        <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
+        <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
+        <script src="{{ asset('js/jquery.odometer.min.js')}}"></script>
+        <script src="{{ asset('js/jquery.appear.js')}}"></script>
+        <script src="{{ asset('js/jquery.countdown.min.js')}}"></script>
+        <script src="{{ asset('js/paroller.js')}}"></script>
+        <script src="{{ asset('js/slick.min.js')}}"></script>
+        <script src="{{ asset('js/ajax-form.js')}}"></script>
+        <script src="{{ asset('js/wow.min.js')}}"></script>
+        <script src="{{ asset('js/jquery-ui.js')}}"></script>
+        <script src="{{ asset('js/aos.js')}}"></script>
+        <script src="{{ asset('js/plugins.js')}}"></script>
+        <script src="{{ asset('js/main.js')}}"></script>
+  
 
 <!-- Photo Gallery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>

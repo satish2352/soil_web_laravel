@@ -49,25 +49,7 @@
   <script src="{{ asset('js/main.js') }}"></script>
 
 
-  <!-- <script data-cfasync="false" src="../../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="js/vendor/jquery-3.5.0.min.js"></script> -->
-        <script src="{{ asset('js/popper.min.js')}}"></script>
-        <script src="{{ asset('js/bootstrap.min.js')}}"></script>
-        <script src="{{ asset('js/isotope.pkgd.min.js')}}"></script>
-        <script src="{{ asset('js/imagesloaded.pkgd.min.js')}}"></script>
-        <script src="{{ asset('js/jquery.magnific-popup.min.js')}}"></script>
-        <script src="{{ asset('js/owl.carousel.min.js')}}"></script>
-        <script src="{{ asset('js/jquery.odometer.min.js')}}"></script>
-        <script src="{{ asset('js/jquery.appear.js')}}"></script>
-        <script src="{{ asset('js/jquery.countdown.min.js')}}"></script>
-        <script src="{{ asset('js/paroller.js')}}"></script>
-        <script src="{{ asset('js/slick.min.js')}}"></script>
-        <script src="{{ asset('js/ajax-form.js')}}"></script>
-        <script src="{{ asset('js/wow.min.js')}}"></script>
-        <script src="{{ asset('js/jquery-ui.js')}}"></script>
-        <script src="{{ asset('js/aos.js')}}"></script>
-        <script src="{{ asset('js/plugins.js')}}"></script>
-        <script src="{{ asset('js/main.js')}}"></script>
-  <!-- ---- AOS ---- -->
+ 
 
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
