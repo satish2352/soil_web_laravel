@@ -1791,96 +1791,37 @@ $counter_list_data) { ?> -->
         <div class="row new-testimonial-active">
 
         <div class="col-12">
-      
+        <div class="new-testimonial-item">
+          <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
+         
+           
+              <div class="new-testi-thumb">
+                <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
+              </div>
+              <div class="testi-leaf-img">
+                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
+              </div>
+              <div class="testi-icon">
+                <span><i class="fas fa-quote-left"></i></span>
+              </div>
+              <div class="new-testi-content">
+                <p><?php echo $fronttestimonialslist_data['content']; ?></p>
+                <div class="testi-icon1">
+                  <span><i class="fas fa-quote-right"></i></span>
+                </div>
 
+                <div class="new-testi-avatar">
+                  <h5><?php echo $fronttestimonialslist_data['title']; ?></h5>
+                  <!-- <span>plant expert</span> -->
+                </div>
+              </div>
+          
+          <?php }?>
+          </div>
+            </div>
 
-          <!-- Satish -->
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script> 
-<div class="container rounded">
-   <div class="d-flex justify-content-center fas fa-heart"></div>
-   <p class="tag">Our customers love</p>
-   <h1 class="text-primary text-center head">What we do</h1>
-   <div class="owl-carousel owl-theme">
-      <div class="owl-item">
-         <div class="card d-flex flex-column">
-            <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div>
-            <div class="main font-weight-bold pb-2 pt-1">Great Service</div>
-            <div class="testimonial"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
-            <div class="d-flex flex-row profile pt-4 mt-auto">
-               <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> 
-               <div class="d-flex flex-column pl-2">
-                  <div class="name">Megan</div>
-                  <p class="text-muted designation">CEO of My Company</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="owl-item">
-         <div class="card d-flex flex-column">
-            <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div>
-            <div class="main font-weight-bold pb-2 pt-1">Great Service</div>
-            <div class="testimonial"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
-            <div class="d-flex flex-row profile pt-4 mt-auto">
-               <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> 
-               <div class="d-flex flex-column pl-2">
-                  <div class="name">Megan</div>
-                  <p class="text-muted designation">CEO of My Company</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="owl-item">
-         <div class="card d-flex flex-column">
-            <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div>
-            <div class="main font-weight-bold pb-2 pt-1">Great Service</div>
-            <div class="testimonial"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
-            <div class="d-flex flex-row profile pt-4 mt-auto">
-               <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> 
-               <div class="d-flex flex-column pl-2">
-                  <div class="name">Megan</div>
-                  <p class="text-muted designation">CEO of My Company</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="owl-item">
-         <div class="card d-flex flex-column">
-            <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div>
-            <div class="main font-weight-bold pb-2 pt-1">Great Service</div>
-            <div class="testimonial"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
-            <div class="d-flex flex-row profile pt-4 mt-auto">
-               <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> 
-               <div class="d-flex flex-column pl-2">
-                  <div class="name">Megan</div>
-                  <p class="text-muted designation">CEO of My Company</p>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="owl-item">
-         <div class="card d-flex flex-column">
-            <div class="mt-2"> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star active-star"></span> <span class="fas fa-star-half-alt active-star"></span> </div>
-            <div class="main font-weight-bold pb-2 pt-1">Great Service</div>
-            <div class="testimonial"> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni dolores molestias veniam inventore itaque eius iure omnis, temporibus culpa id. </div>
-            <div class="d-flex flex-row profile pt-4 mt-auto">
-               <img src="https://images.unsplash.com/photo-1531427186611-ecfd6d936c79?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" alt="" class="rounded-circle"> 
-               <div class="d-flex flex-column pl-2">
-                  <div class="name">Megan</div>
-                  <p class="text-muted designation">CEO of My Company</p>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-
-<!-- Satish -->
-
-       
         </div>
+
 
         <div class="row mt-5">
           <div class="col-lg-12 col-md-12 col-sm-12">
