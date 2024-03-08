@@ -1790,6 +1790,10 @@ $counter_list_data) { ?> -->
         <div class="row">
             <div class="col-lg-8">
                 <div class="row new-testimonial-active">
+
+
+
+                @foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data)      
                     <div class="col-12">
                         <div class="new-testimonial-item">
                             <div class="new-testi-thumb">
@@ -1814,52 +1818,11 @@ $counter_list_data) { ?> -->
                             </div>
                         </div>
                     </div>
-                    <div class="col-12">
-                        <div class="new-testimonial-item">
-                            <div class="new-testi-thumb">
-                                <img src="img/farmer/farmer1.png" alt="">
-                            </div>
-                            <div class="testi-leaf-img">
-                                <img src="img/leaf.png" alt="" srcset="">
-                            </div>
-                            <div class="testi-icon">
-                                <span><i class="fas fa-quote-left"></i></span>
-                            </div>
-                            <div class="new-testi-content">
-                                <p> बिनधास्त आणि नीरधास्त जीवन जगायचे असेल तर शेतकऱ्यांनी SCT वैदिक कडे वळायला पाहिजे .. </p>
-                                <div class="testi-icon1">
-                                    <span><i class="fas fa-quote-right"></i></span>
-                                </div>
-                                <div class="new-testi-avatar">
-                                    <h5>श्री. रोहन माने</h5>
-                                    <span>plant expert</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="new-testimonial-item">
-                            <div class="new-testi-thumb">
-                                <img src="img/farmer/farmer2.png" alt="">
-                            </div>
-                            <div class="testi-leaf-img">
-                                <img src="img/leaf.png" alt="" srcset="">
-                            </div>
-                            <div class="testi-icon">
-                                <span><i class="fas fa-quote-left"></i></span>
-                            </div>
-                            <div class="new-testi-content">
-                                <p>SCT वापरून जमीन सुपीक होणार आणि  सगळ्यांना विषमुक्त अन्न खायला मिळणार..</p>
-                                <div class="testi-icon1">
-                                    <span><i class="fas fa-quote-right"></i></span>
-                                </div>
-                                <div class="new-testi-avatar">
-                                    <h5>श्री. श्रीकांत जाधव</h5>
-                                    <span>plant expert</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach 
+                  
+
+
+
                 </div>
 
 
