@@ -1791,32 +1791,7 @@ $counter_list_data) { ?> -->
         <div class="row new-testimonial-active">
 
         <div class="col-12">
-        <div class="new-testimonial-item">
-          <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
-         
-           
-              <div class="new-testi-thumb">
-                <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
-              </div>
-              <div class="testi-leaf-img">
-                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
-              </div>
-              <div class="testi-icon">
-                <span><i class="fas fa-quote-left"></i></span>
-              </div>
-              <div class="new-testi-content">
-                <p><?php echo $fronttestimonialslist_data['content']; ?></p>
-                <div class="testi-icon1">
-                  <span><i class="fas fa-quote-right"></i></span>
-                </div>
-
-                <div class="new-testi-avatar">
-                  <h5><?php echo $fronttestimonialslist_data['title']; ?></h5>
-                  <!-- <span>plant expert</span> -->
-                </div>
-              </div>
-          
-          <?php }?>
+      
 
 
           <!-- Satish -->
@@ -1904,9 +1879,7 @@ $counter_list_data) { ?> -->
 
 <!-- Satish -->
 
-          </div>
-          </div>
-
+       
         </div>
 
         <div class="row mt-5">
