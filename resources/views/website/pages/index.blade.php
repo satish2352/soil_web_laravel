@@ -1806,7 +1806,7 @@ $counter_list_data) { ?> -->
                                 <span><i class="fas fa-quote-left"></i></span>
                             </div>
                             <div class="new-testi-content">
-                                <p>{{$fronttestimonialslist_data['content']}}</p>
+                                {{$fronttestimonialslist_data['content']}}
                                 <div class="testi-icon1">
                                     <span><i class="fas fa-quote-right"></i></span>
                                 </div>
