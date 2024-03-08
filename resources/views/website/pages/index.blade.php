@@ -710,7 +710,7 @@ $(document).ready(function() {
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="mobile"><b>Mobile Number :</b></label>
-              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"
+              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"pattern="^(\+\d{1,3}[- ]?)?\d{10}$"
                 placeholder="Enter your mobile number" required="required">
             </div>
             <div class="form-group col-md-6">
@@ -1071,7 +1071,7 @@ $(document).ready(function() {
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputmobile5"><b>Mobile Number :</b></label>
-              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"
+              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile" pattern="^(\+\d{1,3}[- ]?)?\d{10}$"
                 placeholder="Enter your mobile number" required="required">
             </div>
             <div class="form-group col-md-6">
