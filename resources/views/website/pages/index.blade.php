@@ -1790,10 +1790,10 @@ $counter_list_data) { ?> -->
       <div class="col-lg-8">
         <div class="row new-testimonial-active">
 
-
+        <div class="col-12">
 
           <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
-          <div class="col-12">
+         
             <div class="new-testimonial-item">
               <div class="new-testi-thumb">
                 <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
@@ -1811,14 +1811,14 @@ $counter_list_data) { ?> -->
                 </div>
 
                 <div class="new-testi-avatar">
-                  <h5>श्री. बाबासाहेब गावडे</h5>
+                  <h5><?php echo $fronttestimonialslist_data['title']; ?></h5>
                   <!-- <span>plant expert</span> -->
                 </div>
               </div>
             </div>
-          </div>
+          
           <?php }?>
-
+          </div>
         </div>
 
 
