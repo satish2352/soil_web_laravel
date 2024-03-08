@@ -1850,6 +1850,116 @@ $counter_list_data) { ?> -->
 
 
 
+<section class="new-testimonial-area new-testimonial-bg bg-clr pt-50 pb-50">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-xl-6 col-lg-8">
+                <div class="section-title white-title text-center mb-70">
+                    <h2 class="title"><span>What</span> Our Farmer’s Say</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-8">
+                <div class="row new-testimonial-active">
+                    <div class="col-12">
+                        <div class="new-testimonial-item">
+                            <div class="new-testi-thumb">
+                                <img src="img/farmer/farmer3.png" alt="">
+                            </div>
+                            <div class="testi-leaf-img">
+                                <img src="img/leaf.png" alt="" srcset="">
+                            </div>
+                            <div class="testi-icon">
+                                <span><i class="fas fa-quote-left"></i></span>
+                            </div>
+                            <div class="new-testi-content">
+                                <p>जर का पुढच्या पिढीला जमीन ....आबादी आबाद आहे , तशीच सुपीक जमीन द्यायची असेल तर आपल्याला SCT ची साथ घ्यावी लागेल तेव्हाच येणाऱ्या ८-१० वर्षांपूर्वी होती तशी शेती होईल  </p>
+                                <div class="testi-icon1">
+                                    <span><i class="fas fa-quote-right"></i></span>
+                                </div>
+
+                                <div class="new-testi-avatar">
+                                    <h5>श्री. बाबासाहेब गावडे</h5>
+                                    <span>plant expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="new-testimonial-item">
+                            <div class="new-testi-thumb">
+                                <img src="img/farmer/farmer1.png" alt="">
+                            </div>
+                            <div class="testi-leaf-img">
+                                <img src="img/leaf.png" alt="" srcset="">
+                            </div>
+                            <div class="testi-icon">
+                                <span><i class="fas fa-quote-left"></i></span>
+                            </div>
+                            <div class="new-testi-content">
+                                <p> बिनधास्त आणि नीरधास्त जीवन जगायचे असेल तर शेतकऱ्यांनी SCT वैदिक कडे वळायला पाहिजे .. </p>
+                                <div class="testi-icon1">
+                                    <span><i class="fas fa-quote-right"></i></span>
+                                </div>
+                                <div class="new-testi-avatar">
+                                    <h5>श्री. रोहन माने</h5>
+                                    <span>plant expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="new-testimonial-item">
+                            <div class="new-testi-thumb">
+                                <img src="img/farmer/farmer2.png" alt="">
+                            </div>
+                            <div class="testi-leaf-img">
+                                <img src="img/leaf.png" alt="" srcset="">
+                            </div>
+                            <div class="testi-icon">
+                                <span><i class="fas fa-quote-left"></i></span>
+                            </div>
+                            <div class="new-testi-content">
+                                <p>SCT वापरून जमीन सुपीक होणार आणि  सगळ्यांना विषमुक्त अन्न खायला मिळणार..</p>
+                                <div class="testi-icon1">
+                                    <span><i class="fas fa-quote-right"></i></span>
+                                </div>
+                                <div class="new-testi-avatar">
+                                    <h5>श्री. श्रीकांत जाधव</h5>
+                                    <span>plant expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="row mt-5">
+                    <div class="col-lg-12 col-md-12 col-sm-12">
+                        <center><button type="button" class="modal-btn" data-toggle="modal"
+                                data-target="#testi-Modal" data-whatever="@mdo">ADD TESTIMONIAL</button></center>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-12">
+                <div class="video-iframe">
+                    <div class="video-bg-clr">
+                        <img src="img/bg/subbanner00.png" class="v-img">
+                        <div class="video-img">
+                            <div class="video_play">
+                                <a href=" https://www.youtube.com/watch?v=pB5BUEr5mHM&t=1s">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 
 <!--====================== Modal======================== -->
