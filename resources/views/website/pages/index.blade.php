@@ -1790,32 +1790,77 @@ $counter_list_data) { ?> -->
         <div class="row">
             <div class="col-lg-8">
                 <div class="row new-testimonial-active">
-                @foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data)
                     <div class="col-12">
                         <div class="new-testimonial-item">
                             <div class="new-testi-thumb">
-                                <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
+                                <img src="img/farmer/farmer3.png" alt="">
                             </div>
                             <div class="testi-leaf-img">
-                                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
+                                <img src="img/leaf.png" alt="" srcset="">
                             </div>
                             <div class="testi-icon">
                                 <span><i class="fas fa-quote-left"></i></span>
                             </div>
                             <div class="new-testi-content">
-                                <p><?php echo $fronttestimonialslist_data['content']; ?></p>
+                                <p>जर का पुढच्या पिढीला जमीन ....आबादी आबाद आहे , तशीच सुपीक जमीन द्यायची असेल तर आपल्याला SCT ची साथ घ्यावी लागेल तेव्हाच येणाऱ्या ८-१० वर्षांपूर्वी होती तशी शेती होईल  </p>
+                                <div class="testi-icon1">
+                                    <span><i class="fas fa-quote-right"></i></span>
+                                </div>
+
+                                <div class="new-testi-avatar">
+                                    <h5>श्री. बाबासाहेब गावडे</h5>
+                                    <span>plant expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="new-testimonial-item">
+                            <div class="new-testi-thumb">
+                                <img src="img/farmer/farmer1.png" alt="">
+                            </div>
+                            <div class="testi-leaf-img">
+                                <img src="img/leaf.png" alt="" srcset="">
+                            </div>
+                            <div class="testi-icon">
+                                <span><i class="fas fa-quote-left"></i></span>
+                            </div>
+                            <div class="new-testi-content">
+                                <p> बिनधास्त आणि नीरधास्त जीवन जगायचे असेल तर शेतकऱ्यांनी SCT वैदिक कडे वळायला पाहिजे .. </p>
                                 <div class="testi-icon1">
                                     <span><i class="fas fa-quote-right"></i></span>
                                 </div>
                                 <div class="new-testi-avatar">
-                                    <h5><?php echo $fronttestimonialslist_data['title']; ?></h5>
-
+                                    <h5>श्री. रोहन माने</h5>
+                                    <span>plant expert</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="new-testimonial-item">
+                            <div class="new-testi-thumb">
+                                <img src="img/farmer/farmer2.png" alt="">
+                            </div>
+                            <div class="testi-leaf-img">
+                                <img src="img/leaf.png" alt="" srcset="">
+                            </div>
+                            <div class="testi-icon">
+                                <span><i class="fas fa-quote-left"></i></span>
+                            </div>
+                            <div class="new-testi-content">
+                                <p>SCT वापरून जमीन सुपीक होणार आणि  सगळ्यांना विषमुक्त अन्न खायला मिळणार..</p>
+                                <div class="testi-icon1">
+                                    <span><i class="fas fa-quote-right"></i></span>
+                                </div>
+                                <div class="new-testi-avatar">
+                                    <h5>श्री. श्रीकांत जाधव</h5>
+                                    <span>plant expert</span>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                @endforeach
 
 
                 <div class="row mt-5">
@@ -1827,23 +1872,22 @@ $counter_list_data) { ?> -->
 
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12">
-        <div class="video-iframe">
-          <div class="video-bg-clr">
-            <img src="{{asset('img/bg/subbanner00.png')}}" class="v-img">
-            <div class="video-img">
-              <div class="video_play">
-                <a href=" https://www.youtube.com/watch?v=pB5BUEr5mHM&t=1s">
-                  <i class="fas fa-play"></i>
-                </a>
-              </div>
+                <div class="video-iframe">
+                    <div class="video-bg-clr">
+                        <img src="img/bg/subbanner00.png" class="v-img">
+                        <div class="video-img">
+                            <div class="video_play">
+                                <a href=" https://www.youtube.com/watch?v=pB5BUEr5mHM&t=1s">
+                                    <i class="fas fa-play"></i>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
         </div>
     </div>
 </section>
-
 <section class="new-testimonial-area new-testimonial-bg bg-clr pt-50 pb-50">
   <div class="container-fluid">
     <div class="row justify-content-center">
