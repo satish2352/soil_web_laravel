@@ -1797,23 +1797,22 @@ $counter_list_data) { ?> -->
                     <div class="col-12">
                         <div class="new-testimonial-item">
                             <div class="new-testi-thumb">
-                                <img src="img/farmer/farmer3.png" alt="">
+                                <img src="{{$fronttestimonialslist_data['photopath']}}" alt="">
                             </div>
                             <div class="testi-leaf-img">
-                                <img src="img/leaf.png" alt="" srcset="">
+                                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
                             </div>
                             <div class="testi-icon">
                                 <span><i class="fas fa-quote-left"></i></span>
                             </div>
                             <div class="new-testi-content">
-                                <p>जर का पुढच्या पिढीला जमीन ....आबादी आबाद आहे , तशीच सुपीक जमीन द्यायची असेल तर आपल्याला SCT ची साथ घ्यावी लागेल तेव्हाच येणाऱ्या ८-१० वर्षांपूर्वी होती तशी शेती होईल  </p>
+                                <p>{{$fronttestimonialslist_data['content']}}</p>
                                 <div class="testi-icon1">
                                     <span><i class="fas fa-quote-right"></i></span>
                                 </div>
 
                                 <div class="new-testi-avatar">
-                                    <h5>श्री. बाबासाहेब गावडे</h5>
-                                    <span>plant expert</span>
+                                    <h5>{{$fronttestimonialslist_data['title']}}</h5>
                                 </div>
                             </div>
                         </div>
@@ -1837,10 +1836,10 @@ $counter_list_data) { ?> -->
             <div class="col-lg-4 col-md-4 col-sm-12">
                 <div class="video-iframe">
                     <div class="video-bg-clr">
-                        <img src="img/bg/subbanner00.png" class="v-img">
+                    <img src="{{asset('img/bg/subbanner00.png')}}" class="v-img">
                         <div class="video-img">
                             <div class="video_play">
-                                <a href=" https://www.youtube.com/watch?v=pB5BUEr5mHM&t=1s">
+                                <a href="https://www.youtube.com/watch?v=pB5BUEr5mHM&t=1s">
                                     <i class="fas fa-play"></i>
                                 </a>
                             </div>                            
