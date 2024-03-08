@@ -1791,10 +1791,10 @@ $counter_list_data) { ?> -->
         <div class="row new-testimonial-active">
 
         <div class="col-12">
-
+        <div class="new-testimonial-item">
           <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
          
-            <div class="new-testimonial-item">
+           
               <div class="new-testi-thumb">
                 <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
               </div>
@@ -1815,10 +1815,11 @@ $counter_list_data) { ?> -->
                   <!-- <span>plant expert</span> -->
                 </div>
               </div>
-            </div>
           
           <?php }?>
           </div>
+          </div>
+
         </div>
 
 
