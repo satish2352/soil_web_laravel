@@ -1798,9 +1798,7 @@ $counter_list_data) { ?> -->
               <div class="new-testi-thumb">
                 <img src="<?php echo  $fronttestimonialslist_data['photopath']; ?>" alt="">
               </div>
-              <div class="testi-leaf-img">
-                <img src="{{asset('img/leaf.png')}}" alt="" srcset="">
-              </div>
+             
               <div class="testi-icon">
                 <span><i class="fas fa-quote-left"></i></span>
               </div>
