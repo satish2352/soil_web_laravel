@@ -1788,11 +1788,12 @@ $counter_list_data) { ?> -->
     </div>
     <div class="row">
       <div class="col-lg-8">
-        <div class="row new-testimonial-active">
+
 
         
        
           <?php foreach ($fronttestimonialslist as $key => $fronttestimonialslist_data) {?>
+            <div class="row new-testimonial-active">
             <div class="col-12">
             <div class="new-testimonial-item">
            
@@ -1816,10 +1817,10 @@ $counter_list_data) { ?> -->
               </div>
            </div>
             </div>
+            </div>
 
           <?php }?>
          
-        </div>
 
 
         <div class="row mt-5">
