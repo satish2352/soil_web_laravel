@@ -19,7 +19,7 @@
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
   <!-- Font Awesome -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
   <!-- CSS links-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-  <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
+  <!-- <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}"> -->
   <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/odometer.css') }}">
   <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
