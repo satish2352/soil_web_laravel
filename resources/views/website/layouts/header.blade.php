@@ -10,16 +10,16 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/soil_logo.png') }}">
   <!-- Place favicon.ico in the root directory -->
-  <!-- Font Awesome CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha384-VoPFVXGXK1lZTcxw0c6VXVj7WJ/yFm2s0bzjUQTUpaJt6D0nOz5bpxbr1I79jEvH" crossorigin="anonymous">
-  <!-- Font Awesome JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js" integrity="sha384-qzfR73MnW5kcjz7OW+JKlUqVqnslRt3jrepmK7a/CwAMT4aLwySWvnGkxSFtkFgP" crossorigin="anonymous"></script>
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
   <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}"> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
   <!-- Font Awesome -->
-  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!-- CSS links-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -40,7 +40,7 @@
   <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/animate.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-  <!-- <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}"> -->
+  <link rel="stylesheet" href="{{ asset('css/fontawesome-all.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
   <link rel="stylesheet" href="{{ asset('css/odometer.css') }}">
   <link rel="stylesheet" href="{{ asset('css/jquery-ui.css') }}">
