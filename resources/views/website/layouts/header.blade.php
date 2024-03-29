@@ -10,13 +10,13 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/soil_logo.png') }}">
   <!-- Place favicon.ico in the root directory -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" integrity="sha384-VoPFVXGXK1lZTcxw0c6VXVj7WJ/yFm2s0bzjUQTUpaJt6D0nOz5bpxbr1I79jEvH" crossorigin="anonymous">
+  
   <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}"> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
     rel="stylesheet">
   <!-- Font Awesome -->
-  <!-- <script src="https://kit.fontawesome.com/a076d05399.js"></script> -->
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   <!-- CSS links-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
     integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
