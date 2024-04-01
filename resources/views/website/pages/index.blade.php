@@ -238,7 +238,7 @@ $webmarquee_array_data) { ?>
       <ul class="p-list">
         <li class="card" style="--accent-color: #9CC623" data-toggle="modal" data-target="#principle-modal">
           <div class="p-icon"><img src="{{asset('img/i2.png')}}"></div>
-          <div class="m-title mt-4 mb-4">First Method</div>
+          <div class="m-title">First Method</div>
 
           <?php foreach ($firstmethodlist_array  as $key =>
 $firstmethodlist_array_data) { ?>
