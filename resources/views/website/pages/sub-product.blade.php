@@ -116,7 +116,7 @@
                                                 <textarea class="form-control mt-3" id="comment" rows="3" placeholder="Write Your Comments Here.." required="required"></textarea>
                                             </div>
                                             <div class="col-12 mt-2 s_product_btn d-flex justify-content-center">
-                                                <button type="button" id="saveDetails" value="Send Review">Send Review</button>
+                                                <input type="button" id="saveDetails" class="s_product_btn_new" value="Send Review">
                                             </div>
                                           </div>
                                       </form>
