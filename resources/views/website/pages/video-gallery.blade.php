@@ -5,7 +5,7 @@
   <div class="container-fluid">
     <div class="row justify-content-center">
       <div class="col-xl-6 col-lg-8">
-        <div class="section-title text-center mb-40">
+        <div class="section-title text-center mb-40" style="margin-top: 20%;">
           <h6 class="sub-title">your dream gallery</h6>
           <h2 class="title"><b><span>Video</span> Gallery</b></h2>
         </div>
