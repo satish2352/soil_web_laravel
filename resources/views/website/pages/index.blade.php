@@ -236,15 +236,13 @@ $webmarquee_array_data) { ?>
 
     <div class="col-md-3">
       <ul class="p-list">
-        <li class="card" style="--accent-color: #9CC623" data-toggle="modal" data-target="#principle-modal">
-          <div class="p-icon"><img src="{{asset('img/i2.png')}}"></div>
-          <div class="m-title mt-4 mb-4">First Method</div>
-
+        <li class="card" style="--accent-color: #F6911B" data-toggle="modal" data-target="#principle-modal-2">
+          <div class="p-icon"><a><img src="{{asset('img/i4.png')}}"></a></div>
+          <div class="m-title">Second Rule</div>
           <?php foreach ($firstmethodlist_array  as $key =>
-$firstmethodlist_array_data) { ?>
+            $firstmethodlist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4"><?php echo $firstmethodlist_array_data['first_method']; ?></div>
           <?php } ?>
-
         </li>
       </ul>
     </div>
@@ -256,7 +254,7 @@ $firstmethodlist_array_data) { ?>
           <div class="p-icon"><a><img src="{{asset('img/i4.png')}}"></a></div>
           <div class="m-title">Second Rule</div>
           <?php foreach ($secondrulelist  as $key =>
-$secondrulelist_array_data) { ?>
+            $secondrulelist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4"><?php echo $secondrulelist_array_data['second_rule']; ?></div>
           <?php } ?>
         </li>
@@ -269,7 +267,7 @@ $secondrulelist_array_data) { ?>
           <div class="p-icon"><a><img src="{{asset('img/i2.png')}}"></a></div>
           <div class="m-title">Third Meditation</div>
           <?php foreach ($thirdmeditationlist  as $key =>
-$thirdmeditationlist_array_data) { ?>
+            $thirdmeditationlist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4">
             <?php echo $thirdmeditationlist_array_data['third_meditation']; ?></div>
           <?php } ?>
