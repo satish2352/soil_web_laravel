@@ -157,7 +157,7 @@
 		font-weight: 600;
 	}
 
-  .s_product_btn .s_product_btn_new:hover{
+  .s_product_btn_new:hover{
     background-color: #9cc423 !important;
     color: #f5f5f5 !important;
-  }
+}
