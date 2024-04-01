@@ -1726,7 +1726,7 @@ $(document).on('change', '.business_taluka', function() {
           <div class="blog-post-content">
             <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>
             <!-- <p><?php echo $frontblogarticlelist_data['content']; ?></p> -->
-            <a href="sub_blog.php?id=<?php echo $frontblogarticlelist_data['id']; ?>" class="arrow-btn">Read More
+            <a href="sub-blogs?id=<?php echo $frontblogarticlelist_data['id']; ?>" class="arrow-btn">Read More
               <span></span></a>
 
           </div>
