@@ -238,7 +238,7 @@ $webmarquee_array_data) { ?>
       <ul class="p-list">
         <li class="card" style="--accent-color: #9CC623" data-toggle="modal" data-target="#principle-modal">
           <div class="p-icon"><img src="{{asset('img/i2.png')}}"></div>
-          <div class="m-title">First Method</div>
+          <div class="m-title mt-4 mb-4">First Method</div>
 
           <?php foreach ($firstmethodlist_array  as $key =>
 $firstmethodlist_array_data) { ?>
@@ -254,7 +254,7 @@ $firstmethodlist_array_data) { ?>
       <ul class="p-list">
         <li class="card" style="--accent-color: #F6911B" data-toggle="modal" data-target="#principle-modal-2">
           <div class="p-icon"><a><img src="{{asset('img/i4.png')}}"></a></div>
-          <div class="m-title">Second Rule</div>
+          <div class="m-title mt-4 mb-4">Second Rule</div>
           <?php foreach ($secondrulelist  as $key =>
 $secondrulelist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4"><?php echo $secondrulelist_array_data['second_rule']; ?></div>
@@ -267,7 +267,7 @@ $secondrulelist_array_data) { ?>
 
         <li class="card" style="--accent-color: #9CC623" data-toggle="modal" data-target="#principle-modal-3">
           <div class="p-icon"><a><img src="{{asset('img/i2.png')}}"></a></div>
-          <div class="m-title">Third Meditation</div>
+          <div class="m-title mt-4 mb-4">Third Meditation</div>
           <?php foreach ($thirdmeditationlist  as $key =>
 $thirdmeditationlist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4">
