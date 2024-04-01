@@ -12,7 +12,7 @@
     </div>
     <div class="row justify-content-center blog-active">
       <?php foreach ($frontblogarticlelist as $key => $frontblogarticlelist_data) {?>
-      <div class="col-lg-3 col-md-6 card1">
+      <div class="col-lg-4 col-md-6">
         <div class="card">
           <img src="<?php echo  $frontblogarticlelist_data['photopath']; ?>" class="card-img-top" alt="...">
           <div class="card-body">
