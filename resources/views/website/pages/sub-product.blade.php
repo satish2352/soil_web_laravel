@@ -77,9 +77,9 @@
                                               <h4>Product Description:</h4>
                                           </div>
                                           <div class="col-lg-6 col-md-6 col-sm-6 mt-2">
-                                              <ul>
+                                              
                                               <?php echo $frontproductlist_data['additional_info']; ?>
-                                              </ul>
+                                              
                                           </div>
                                       </div>
                                   </div>
