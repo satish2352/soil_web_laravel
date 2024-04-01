@@ -3,7 +3,7 @@
 @section('content')
 <section class="blog-area blog-bg pt-50 pb-50" id="blog">
   <div class="container">
-    <div class="row justify-content-center">
+    <div class="row justify-content-center" style="margin-top:10%;">
       <div class="col-xl-6 col-lg-8">
         <div class="section-title text-center">
           <h2 class="title"><span>Latest</span> News & Articles</h2>
