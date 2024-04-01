@@ -5081,10 +5081,6 @@ marquee {
 .about-content p{
 	margin-bottom: 0px;
 	color: black;
-	text-align: justify;
-	word-wrap: break-word;
-	padding-left: 1%;
-	padding-right: 1%;
 }
 @media (max-width:360px)
 {
@@ -6276,18 +6272,12 @@ border-radius: 50px;
 }
 
 .card-name{
-    /*font-size: 34px;*/
+    font-size: 34px;
     font-weight: 900;
     color: rgb(188, 255, 53);
     margin: 10px;
     padding: 10px;
 
-}
-
-@media screen and (max-width: 453px) {
-	.card-name{
-		font-size: 30px;
-	}	
 }
 .card-button button{
     position: relative;
@@ -6324,150 +6314,199 @@ border-radius: 50px;
     border-radius: 8px;
     color: white !important;  
 }
+/*our team CSS */
 
 
-/* Team Section */
+
+.our{
+    color:#b9dd39;
+
+}
 
 
-.team-item {
+.team-blog-post{
     position: relative;
-    padding: 30px;
-    text-align: center;
-    transition: .5s;
-    z-index: 1;
-    
 }
 
-.team-item::before,
-.team-item::after {
-    position: absolute;
-    content: "";
+.team-blog-post img{
     width: 100%;
-    height: 40%;
-    top: 0;
-    left: 0;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform .2s;
+}
+@media (max-width:767px) and (min-width:600px)
+{
+    .team-blog-post img{
+      height: auto;
+    }
+}
+.team-blog-post img:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1); 
+  transform: scale(1.1); 
+}
+.team-blog-post .category{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 15px;
+  font-size: 14px;  
+    text-decoration: none;
+    background-color: #e67e22;
+    color: #fff;
     border-radius: 5px;
-    background: #FFFFFF;
-    box-shadow: 0 0 45px rgba(0, 0, 0, .07);
-    transition: .5s;
-    z-index: -1;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.1);
+    text-transform: uppercase;
+}
+.team-name{
+    position: absolute;
+    bottom: -30px;
+    padding: 20px;
+    background-color: #fff;
+    width: calc(100% - 10px);
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 10px;
+    box-shadow: 1px 1px 8px rgba(0,0,0,0.08);
+    padding-top: 36px;
 }
 
-.team-item::after {
-    top: auto;
-    bottom: 0;
+.team-name h2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
 }
 
-.team-item:hover::before,
-.team-item:hover::after {
-    background:#9cc623;
+.team-name img{
+    height: 70px;
+    width: 70px;
+    border: 5px solid rgba(0,0,0,0.1);
+    border-radius: 50%;
+    position: absolute;
+    top: -35px;
+    left: 35px;
 }
 
-.team-item h5,
-.team-item p {
-    transition: .5s;
+.tags a{
+    color: #888;
+    font-weight: 700;
+    text-decoration: none;
+    margin-right: 15px;
+    transition: 0.3s ease;
 }
 
-.team-item:hover h5,
-.team-item:hover p,
-.team-item:hover .btn-square i{
-    color: #FFFFFF;
-}
-.team-item:hover .btn-square:first-child{
-    background-color: rgb(59, 89, 152) !important;
-}
-.team-item:hover .btn-square:nth-child(2) {
-    background-color: #55acee !important;
-}
-.team-item:hover .btn-square:nth-child(3) {
-    background-color: #0A66C2 !important;
-}
-.team-item:hover .btn-square:last-child{
-    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
-		background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-		background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
-}
-.team-item img {
-    padding: 15px;
-    border: 2px solid #9cc623;
-}
-/*** Button ***/
-.btn-team {
-    font-weight: 500;
-    transition: .5s;
-}
-
-.btn-team.btn-primary,
-.btn-team.btn-outline-primary:hover {
+.tags a:hover{
     color: #000;
 }
-
-.btn-square {
-    width: 38px;
-    height: 38px;
-    color: black;
+.team-card {
+  border: 0;
+  border-radius: 15px 0 15px 0;
+  box-shadow: 0px 5px 10px -5px rgba(0, 0, 0, 0.75);
+  height: 50%;
 
 }
-.btn-square i{
-    color: black;
+
+.team-card .card-img {
+  border-radius: 15px 0 0 0;
+  object-fit: cover;
 }
-.btn-sm-square {
-    width: 32px;
-    height: 32px;
+.team-card .card-socials {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  padding: 0 20px;
+  z-index: 1;
 }
 
-.btn-lg-square {
-    width: 48px;
-    height: 48px;
+.colr{
+    color: white;
 }
+#fac{
+    display: block;
+  border-radius: 15px 0 15px 0;
+  width: 20%;
+  height: 20%;
+  background: #9CC623;
+  color: white !important;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+#fac:hover{
+    background:#00acee;
+    
+}
+#tw{
+    display: block;
+  border-radius: 15px 0 15px 0;
+  width: 20%;
+  height: 20%;
+  background: #9CC623;
+  color: white;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+#tw:hover{
+    background: #00acee;
 
-.btn-square,
-.btn-sm-square,
-.btn-lg-square {
-    padding: 0;
+}
+#insta{
+    display: block;
+  border-radius: 15px 0 15px 0;
+  width: 20%;
+  height: 20%;
+  background: #9CC623;
+  color: white ;
+  line-height: 40px;
+  text-align: center;
+  transition: 0.3s;
+}
+#insta:hover{
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+}
+.team-icons{
     display: flex;
-    align-items: center;
     justify-content: center;
-    font-weight: normal;
-    border-radius: 50px;
+    gap:5px ;
+}
+.height{
+    height:58%;
+}
+/*@media screen and (max-width: 1100px) {
+    .container{
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 60px;
+    }
 }
 
+@media screen and (max-width: 600px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-row-gap: 60px;
+    }
+}*/
 
+@media(max-width: 768px) and (min-width: 200px){
 
+    .team-blog-post{
+        margin-bottom: 20%;
+    }
+}
+@media(max-width: 849px) and (min-width: 200px){
 
-      /* Annimation-4pillar */
+    .team-blog-post{
+        margin-bottom: 20%;
+    }
+}
+@media(max-width: 1024px) and (min-width: 200px){
 
-	  /* div .annimation{
-		width: 100px;
-		height: 100px;
-		animation-name: mymove;
-		animation-duration: 10s;
-		animation-iteration-count: infinite;
-		animation-direction: alternate;
-		animation-timing-function: linear;
-		transition: ease-in-out;
-	  }
-	  
+    .team-blog-post{
+        margin-bottom: 20%;
+    }
+}
 
-
-	  @keyframes mymove {
-  
-		0% {
-		  background-image: url("img/soil1.png");
-		}
-		20% {
-		  background-image: url("img/dryfruits.png");
-		}
-		40% {
-		  background-image: url('img/soil1.png');
-		}
-		60% {
-		  background-image: url('img/dryfruits.png');
-		}
-		80% {
-		  background-image: url('img/soil1.png');
-		}
-		100% {
-		  background-image: url('img/dryfruits.png');
-		}
-	  } */

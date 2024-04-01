@@ -5173,7 +5173,7 @@ marquee {
   --iconOffsetY: calc(var(--iconS) / 2.5);
   margin-top: var(--iconOffsetY);
   margin-inline: var(--iconOffsetX);
-  height: 340px;
+  height: auto !important;
   font-family: 'Roboto', sans-serif;
   color: #333;
   background-color: #fff;
@@ -6471,3 +6471,4 @@ border-radius: 50px;
 		  background-image: url('img/dryfruits.png');
 		}
 	  } */
+
