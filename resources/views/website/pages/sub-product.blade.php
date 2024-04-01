@@ -4,7 +4,7 @@
 
 
 
-<section class="breadcrumb-area breadcrumb-bg" data-background="img/bg/subbanner.jpg">
+<section class="breadcrumb-area breadcrumb-bg" data-background="{{ asset('img/bg/subbanner.jpg') }}">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
