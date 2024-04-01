@@ -49,6 +49,8 @@
   <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
   <link rel="stylesheet" href="{{ asset('css/default.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
   <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
   <script src="{{ asset('js/main.js') }}"></script>
 
