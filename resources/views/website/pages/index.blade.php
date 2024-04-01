@@ -1724,7 +1724,7 @@ $(document).on('change', '.business_taluka', function() {
             <a><img src="<?php echo  $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
           </div>
           <div class="blog-post-content">
-            <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>
+            <h4><a><?php echo (mb_strlen($frontblogarticlelist_data['title'], 'UTF-8') > 30) ? mb_substr($frontblogarticlelist_data['title'], 0, 30, 'UTF-8') . '...' : $frontblogarticlelist_data['title']; ?></a></h4>
             <!-- <p><?php echo $frontblogarticlelist_data['content']; ?></p> -->
             <a href="sub-blogs?id=<?php echo $frontblogarticlelist_data['id']; ?>" class="arrow-btn">Read More
               <span></span></a>
