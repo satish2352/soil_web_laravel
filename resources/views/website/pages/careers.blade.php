@@ -12,6 +12,31 @@
         </div>
       </div>
     </div>
+    @if(session('success'))
+    <div class="alert alert-success" role="alert" id="success-alert">
+      {{ session('success') }}
+    </div>
+    @endif
+
+    @if(session('error'))
+    <div class="alert alert-danger" role="alert" id="error-alert">
+      {{ session('error') }}
+    </div>
+    @endif
+
+    <script>
+    $(document).ready(function() {
+      // Show success message for 3 seconds
+      $("#success-alert").fadeTo(3000, 500).slideUp(500, function() {
+        $("#success-alert").slideUp(500);
+      });
+      // Show error message for 3 seconds
+      $("#error-alert").fadeTo(3000, 500).slideUp(500, function() {
+        $("#error-alert").slideUp(500);
+      });
+    });
+    </script>
+
     <div class="row">
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mt-3">
@@ -71,7 +96,7 @@
         </button>
       </div>
       <div class="modal-body" style="color: black;">
-        <form id="internship_form" enctype="multipart/form-data">
+        <form id="internship_form" action="{{route('internship_form_submit')}}" method="post" enctype="multipart/form-data">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name"><b>Full Name :</b></label>
@@ -116,7 +141,7 @@
                                          </center> -->
           <div class="text-center">
             <!-- <a href="#"> -->
-            <button type="submit" class="btn btn-primary ">Save</button>
+            <input type="submit" class="btn btn-primary " />
             <!-- <input type="button" value="Submit" class="p_modal_btn"> -->
             <!-- </a> -->
           </div>
@@ -143,7 +168,7 @@
       </div>
       <div class="modal-body" style="color: black;">
         <div class="container">
-          <form id="distributor_form" method="post" enctype="multipart/form-data">
+          <form id="distributor_form" method="post" action="{{route('frontdistributorregistration')}}" enctype="multipart/form-data">
             <div>
               <div class="text-center">
                 <h3 class="title" style="color: black;">Personal Details :</h3>
@@ -432,7 +457,7 @@
         </button>
       </div>
       <div class="modal-body" style="color: black;">
-        <form id="employment_form" method="post" enctype="multipart/form-data">
+        <form id="employment_form" action="{{route('frontjobpostingadd')}}" method="post" enctype="multipart/form-data">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputname"><b>Full Name :</b></label>
@@ -498,7 +523,7 @@
                                         </div>
                                  </center> -->
           <div class="text-center">
-            <a href="#"> <button type="Submit" class="p_modal_btn">Submit</button></a>
+            <input type="submit" class="p_modal_btn" />
           </div>
           <br>
         </form>
