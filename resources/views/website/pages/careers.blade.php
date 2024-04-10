@@ -12,32 +12,6 @@
         </div>
       </div>
     </div>
-    @if(session('success'))
-    <div class="alert alert-success" role="alert" id="success-alert">
-      {{ session('success') }}
-    </div>
-    @endif
-
-    @if(session('error'))
-    <div class="alert alert-danger" role="alert" id="error-alert">
-      {{ session('error') }}
-    </div>
-    @endif
-
-    <script>
-    $(document).ready(function() {
-      // Show success message for 3 seconds
-      $("#success-alert").fadeTo(3000, 500).slideUp(500, function() {
-        $("#success-alert").slideUp(500);
-      });
-
-      // Show error message for 3 seconds
-      $("#error-alert").fadeTo(3000, 500).slideUp(500, function() {
-        $("#error-alert").slideUp(500);
-      });
-    });
-    </script>
-
     <div class="row">
       <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4">
         <div class="career mt-3">
@@ -60,7 +34,7 @@
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal30" class="btn"
-                aria-expanded="true">SCT Business Association</a>
+                aria-expanded="true">SCT Business Recruitment</a>
             </div>
           </div>
         </div>
@@ -73,7 +47,7 @@
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal31" class="btn"
-                aria-expanded="true">Employment</a>
+                aria-expanded="true">Job Vacancy</a>
             </div>
           </div>
         </div>
@@ -97,8 +71,7 @@
         </button>
       </div>
       <div class="modal-body" style="color: black;">
-        <form id="internship_form" action="{{route('internship_form_submit')}}" method="post"
-          enctype="multipart/form-data">@csrf
+        <form id="internship_form" enctype="multipart/form-data">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name"><b>Full Name :</b></label>
@@ -114,7 +87,7 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="mobile"><b>Mobile Number :</b></label>
-              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"
+              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"pattern="^(\+\d{1,3}[- ]?)?\d{10}$"
                 placeholder="Enter your mobile number" required="required">
             </div>
             <div class="form-group col-md-6">
@@ -143,7 +116,7 @@
                                          </center> -->
           <div class="text-center">
             <!-- <a href="#"> -->
-            <input type="submit" class="btn btn-primary " />
+            <button type="submit" class="btn btn-primary ">Save</button>
             <!-- <input type="button" value="Submit" class="p_modal_btn"> -->
             <!-- </a> -->
           </div>
@@ -162,7 +135,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Distributor Application Form</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">SCT Business Recruitment Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -170,8 +143,7 @@
       </div>
       <div class="modal-body" style="color: black;">
         <div class="container">
-          <form id="distributor_form" method="post" action="{{route('frontdistributorregistration')}}"
-            enctype="multipart/form-data">@csrf
+          <form id="distributor_form" method="post" enctype="multipart/form-data">
             <div>
               <div class="text-center">
                 <h3 class="title" style="color: black;">Personal Details :</h3>
@@ -453,15 +425,14 @@
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Posting</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Vacancy Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body" style="color: black;">
-        <form id="employment_form" action="{{route('frontjobpostingadd')}}" method="post" enctype="multipart/form-data">
-          @csrf
+        <form id="employment_form" method="post" enctype="multipart/form-data">
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputname"><b>Full Name :</b></label>
@@ -477,7 +448,7 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputmobile5"><b>Mobile Number :</b></label>
-              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"
+              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile" pattern="^(\+\d{1,3}[- ]?)?\d{10}$"
                 placeholder="Enter your mobile number" required="required">
             </div>
             <div class="form-group col-md-6">
@@ -527,7 +498,7 @@
                                         </div>
                                  </center> -->
           <div class="text-center">
-            <input type="submit" class="p_modal_btn" />
+            <a href="#"> <button type="Submit" class="p_modal_btn">Submit</button></a>
           </div>
           <br>
         </form>
