@@ -97,6 +97,7 @@
       </div>
       <div class="modal-body" style="color: black;">
         <form id="internship_form" action="{{route('internship_form_submit')}}" method="post" enctype="multipart/form-data">
+        @csrf
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name"><b>Full Name :</b></label>
@@ -169,6 +170,7 @@
       <div class="modal-body" style="color: black;">
         <div class="container">
           <form id="distributor_form" method="post" action="{{route('frontdistributorregistration')}}" enctype="multipart/form-data">
+          @csrf
             <div>
               <div class="text-center">
                 <h3 class="title" style="color: black;">Personal Details :</h3>
@@ -458,6 +460,7 @@
       </div>
       <div class="modal-body" style="color: black;">
         <form id="employment_form" action="{{route('frontjobpostingadd')}}" method="post" enctype="multipart/form-data">
+        @csrf
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputname"><b>Full Name :</b></label>
