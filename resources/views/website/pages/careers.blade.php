@@ -433,7 +433,8 @@
                                             </div>
                                      </center> -->
               <div class="text-center">
-                <a href="#"><button type="Submit" class="p_modal_btn">Submit</button></a>
+                <input type="submit" class="btn p_modal_btn" />
+                <!-- <a href="#"><button type="Submit" class="p_modal_btn">Submit</button></a> -->
               </div>
               <br>
               <!-- </form> -->
