@@ -30,6 +30,7 @@
       $("#success-alert").fadeTo(3000, 500).slideUp(500, function() {
         $("#success-alert").slideUp(500);
       });
+
       // Show error message for 3 seconds
       $("#error-alert").fadeTo(3000, 500).slideUp(500, function() {
         $("#error-alert").slideUp(500);
@@ -59,7 +60,7 @@
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal30" class="btn"
-                aria-expanded="true">SCT Business Recruitment</a>
+                aria-expanded="true">SCT Business Association</a>
             </div>
           </div>
         </div>
@@ -72,7 +73,7 @@
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal31" class="btn"
-                aria-expanded="true">Job Vacancy</a>
+                aria-expanded="true">Employment</a>
             </div>
           </div>
         </div>
@@ -96,8 +97,8 @@
         </button>
       </div>
       <div class="modal-body" style="color: black;">
-        <form id="internship_form" action="{{route('internship_form_submit')}}" method="post" enctype="multipart/form-data">
-        @csrf
+        <form id="internship_form" action="{{route('internship_form_submit')}}" method="post"
+          enctype="multipart/form-data">@csrf
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="name"><b>Full Name :</b></label>
@@ -113,7 +114,7 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="mobile"><b>Mobile Number :</b></label>
-              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"pattern="^(\+\d{1,3}[- ]?)?\d{10}$"
+              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"
                 placeholder="Enter your mobile number" required="required">
             </div>
             <div class="form-group col-md-6">
@@ -161,7 +162,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">SCT Business Recruitment Form</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Distributor Application Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -169,8 +170,8 @@
       </div>
       <div class="modal-body" style="color: black;">
         <div class="container">
-          <form id="distributor_form" method="post" action="{{route('frontdistributorregistration')}}" enctype="multipart/form-data">
-          @csrf
+          <form id="distributor_form" method="post" action="{{route('frontdistributorregistration')}}"
+            enctype="multipart/form-data">@csrf
             <div>
               <div class="text-center">
                 <h3 class="title" style="color: black;">Personal Details :</h3>
@@ -452,7 +453,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Vacancy Form</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Posting</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -460,7 +461,7 @@
       </div>
       <div class="modal-body" style="color: black;">
         <form id="employment_form" action="{{route('frontjobpostingadd')}}" method="post" enctype="multipart/form-data">
-        @csrf
+          @csrf
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputname"><b>Full Name :</b></label>
@@ -476,7 +477,7 @@
           <div class="form-row">
             <div class="form-group col-md-6">
               <label for="inputmobile5"><b>Mobile Number :</b></label>
-              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile" pattern="^(\+\d{1,3}[- ]?)?\d{10}$"
+              <input type="tel" class="form-control txtnum1" name="mobile" id="mobile"
                 placeholder="Enter your mobile number" required="required">
             </div>
             <div class="form-group col-md-6">
