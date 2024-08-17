@@ -26,7 +26,7 @@
             const form = event.target;
             const formData = new FormData(form);
             
-            fetch('{{ url('resetPassword') }}', {
+            fetch('https://finalapi.soilchargertechnology.com/api/resetPassword', {
                 method: 'POST',
                 body: formData,
                 headers: {
