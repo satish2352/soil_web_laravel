@@ -34,3 +34,5 @@ Route::post('/districtlist', ['as' => 'districtlist', 'uses' => 'App\Http\Contro
 Route::post('/talukalist', ['as' => 'talukalist', 'uses' => 'App\Http\Controllers\Website\CareerController@talukalist']);
 Route::post('/villagelist', ['as' => 'villagelist', 'uses' => 'App\Http\Controllers\Website\CareerController@villagelist']);
 Route::post('/frontproductreviewadd', ['as' => 'frontproductreviewadd', 'uses' => 'App\Http\Controllers\Website\CareerController@frontproductreviewadd']);
+
+Route::post("password/reset/{token}", ['as' => 'frontproductreviewadd', 'uses' => 'App\Http\Controllers\Website\AuthController@resetPasswordPage']);
