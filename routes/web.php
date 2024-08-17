@@ -35,4 +35,4 @@ Route::post('/talukalist', ['as' => 'talukalist', 'uses' => 'App\Http\Controller
 Route::post('/villagelist', ['as' => 'villagelist', 'uses' => 'App\Http\Controllers\Website\CareerController@villagelist']);
 Route::post('/frontproductreviewadd', ['as' => 'frontproductreviewadd', 'uses' => 'App\Http\Controllers\Website\CareerController@frontproductreviewadd']);
 
-Route::post("password/reset/{token}", ['as' => 'frontproductreviewadd', 'uses' => 'App\Http\Controllers\Website\AuthController@resetPasswordPage']);
+Route::get("password/reset/{token}", ['as' => 'frontproductreviewadd', 'uses' => 'App\Http\Controllers\Website\AuthController@resetPasswordPage']);
