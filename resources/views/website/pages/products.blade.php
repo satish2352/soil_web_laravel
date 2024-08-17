@@ -6,7 +6,7 @@
     <div class="row justify-content-center">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
         <div class="section-title text-center mb-50">
-          <h1 style="margin-top:100px;"></h1>
+          <h1 style="margin-top:10%;"></h1>
 
           <h2 class="title mb-2"><span>Our</span> Products</h2>
           <p>Increase the soil fertility and strength of plant. Healthy plant development is our main aim. From last

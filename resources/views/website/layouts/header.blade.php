@@ -10,6 +10,10 @@
 
   <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/soil_logo.png') }}">
   <!-- Place favicon.ico in the root directory -->
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.1.20/jquery.fancybox.min.css'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  
   <!-- <link rel="shortcut icon" type="image/x-icon" href="{{ asset('img/favicon.png') }}"> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"
@@ -45,6 +49,8 @@
   <link rel="stylesheet" href="{{ asset('css/slick.css') }}">
   <link rel="stylesheet" href="{{ asset('css/default.css') }}">
   <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style1.css') }}">
+  <link rel="stylesheet" href="{{ asset('css/style2.css') }}">
   <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
   <script src="{{ asset('js/main.js') }}"></script>
 

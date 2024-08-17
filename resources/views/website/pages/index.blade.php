@@ -241,7 +241,7 @@ $webmarquee_array_data) { ?>
           <div class="m-title mt-4 mb-4">First Method</div>
 
           <?php foreach ($firstmethodlist_array  as $key =>
-$firstmethodlist_array_data) { ?>
+          $firstmethodlist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4"><?php echo $firstmethodlist_array_data['first_method']; ?></div>
           <?php } ?>
 
@@ -256,7 +256,7 @@ $firstmethodlist_array_data) { ?>
           <div class="p-icon"><a><img src="{{asset('img/i4.png')}}"></a></div>
           <div class="m-title">Second Rule</div>
           <?php foreach ($secondrulelist  as $key =>
-$secondrulelist_array_data) { ?>
+            $secondrulelist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4"><?php echo $secondrulelist_array_data['second_rule']; ?></div>
           <?php } ?>
         </li>
@@ -269,7 +269,7 @@ $secondrulelist_array_data) { ?>
           <div class="p-icon"><a><img src="{{asset('img/i2.png')}}"></a></div>
           <div class="m-title">Third Meditation</div>
           <?php foreach ($thirdmeditationlist  as $key =>
-$thirdmeditationlist_array_data) { ?>
+            $thirdmeditationlist_array_data) { ?>
           <div class="content-1 text-center mt-4 mb-4">
             <?php echo $thirdmeditationlist_array_data['third_meditation']; ?></div>
           <?php } ?>
@@ -654,7 +654,7 @@ $(document).ready(function() {
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal30" class="btn"
-                aria-expanded="true">SCT Business Association</a>
+                aria-expanded="true">SCT Business Recruitment</a>
             </div>
           </div>
         </div>
@@ -667,7 +667,7 @@ $(document).ready(function() {
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal31" class="btn"
-                aria-expanded="true">Employment</a>
+                aria-expanded="true">Job Vacancy</a>
             </div>
           </div>
         </div>
@@ -758,7 +758,7 @@ $(document).ready(function() {
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Distributor Application Form</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">SCT Business Recruitment Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -1048,7 +1048,7 @@ $(document).ready(function() {
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Posting</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Vacancy Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -1724,9 +1724,9 @@ $(document).on('change', '.business_taluka', function() {
             <a><img src="<?php echo  $frontblogarticlelist_data['photopath']; ?>" alt=""></a>
           </div>
           <div class="blog-post-content">
-            <h4><a><?php echo $frontblogarticlelist_data['title']; ?></a></h4>
+            <h4><a><?php echo (mb_strlen($frontblogarticlelist_data['title'], 'UTF-8') > 30) ? mb_substr($frontblogarticlelist_data['title'], 0, 30, 'UTF-8') . '...' : $frontblogarticlelist_data['title']; ?></a></h4>
             <!-- <p><?php echo $frontblogarticlelist_data['content']; ?></p> -->
-            <a href="sub_blog.php?id=<?php echo $frontblogarticlelist_data['id']; ?>" class="arrow-btn">Read More
+            <a href="sub-blogs?id=<?php echo $frontblogarticlelist_data['id']; ?>" class="arrow-btn">Read More
               <span></span></a>
 
           </div>

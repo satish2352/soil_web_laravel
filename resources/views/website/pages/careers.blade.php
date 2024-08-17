@@ -60,7 +60,7 @@
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal30" class="btn"
-                aria-expanded="true">SCT Business Association</a>
+                aria-expanded="true">SCT Business Recruitment</a>
             </div>
           </div>
         </div>
@@ -73,7 +73,7 @@
           <div class="">
             <div class="career-content">
               <a href="#" data-toggle="modal" type="button" data-target="#myModal31" class="btn"
-                aria-expanded="true">Employment</a>
+                aria-expanded="true">Job Vacancy</a>
             </div>
           </div>
         </div>
@@ -162,7 +162,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Distributor Application Form</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">SCT Business Recruitment Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
@@ -433,7 +433,8 @@
                                             </div>
                                      </center> -->
               <div class="text-center">
-                <a href="#"><button type="Submit" class="p_modal_btn">Submit</button></a>
+                <input type="submit" class="btn p_modal_btn" />
+                <!-- <a href="#"><button type="Submit" class="p_modal_btn">Submit</button></a> -->
               </div>
               <br>
               <!-- </form> -->
@@ -453,7 +454,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <center>
-          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Posting</h5>
+          <h5 class="modal-title" id="exampleModalLabel" style="color: black;">Job Vacancy Form</h5>
         </center>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
