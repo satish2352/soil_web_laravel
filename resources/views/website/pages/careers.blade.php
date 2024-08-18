@@ -171,7 +171,7 @@
       <div class="modal-body" style="color: black;">
         <div class="container">
           <form id="distributor_form" method="post" action="{{route('frontdistributorregistration')}}"
-            enctype="multipart/form-data">@csrf
+          enctype="multipart/form-data">@csrf
             <div>
               <div class="text-center">
                 <h3 class="title" style="color: black;">Personal Details :</h3>

@@ -136,140 +136,219 @@ class CareerController extends Controller
     
     
     
-    public function frontdistributorregistration(Request $request)
-    {
-        try
-        {
-            $users = new FrontUsers();
-            $users->fname = $request->fname;
-            $users->mname = $request->mname;
-            $users->lname = $request->lname;
-            $users->password = $request->password;
-            $users->email = $request->email;
-            $users->phone = $request->phone;
-            $users->alternate_mobile = $request->alternate_mobile;
-            $users->state = $request->state;
-            $users->district = $request->district;
-            $users->taluka = $request->taluka;
-            $users->city = $request->city;
-            $users->business_address = $request->business_address;
-            $users->business_state = $request->business_state;
-            $users->business_district = $request->business_district;
-            $users->business_tuluka = $request->business_tuluka;
-            $users->business_village = $request->business_village;
-            $users->where_open_shop = $request->where_open_shop;
-            $users->used_sct = $request->used_sct;
-            $users->why_want_take_distributorship = $request->why_want_take_distributorship;
-            $users->distributorship_exerience = $request->distributorship_exerience;
-            $users->experience_farm_garder = $request->experience_farm_garder;
-            $users->goal = $request->goal;
-            $users->user_type = 'fsc';
-            $users->is_deleted = 'no'; // 0 Means Active, 1 Means Delete
-            $users->active = 'no'; // 0 Means Active, 1 Means Inactive
-            $users->added_by =  ($request->created_by) ? $request->created_by: 'superadmin'; // 0- from Superadmin 1- Distributor
-            $users->save();
+    // public function frontdistributorregistration(Request $request)
+    // {
+    //     try
+    //     {
+    //         $users = new FrontUsers();
+    //         $users->fname = $request->fname;
+    //         $users->mname = $request->mname;
+    //         $users->lname = $request->lname;
+    //         $users->password = $request->password;
+    //         $users->email = $request->email;
+    //         $users->phone = $request->phone;
+    //         $users->alternate_mobile = $request->alternate_mobile;
+    //         $users->state = $request->state;
+    //         $users->district = $request->district;
+    //         $users->taluka = $request->taluka;
+    //         $users->city = $request->city;
+    //         $users->business_address = $request->business_address;
+    //         $users->business_state = $request->business_state;
+    //         $users->business_district = $request->business_district;
+    //         $users->business_tuluka = $request->business_tuluka;
+    //         $users->business_village = $request->business_village;
+    //         $users->where_open_shop = $request->where_open_shop;
+    //         $users->used_sct = $request->used_sct;
+    //         $users->why_want_take_distributorship = $request->why_want_take_distributorship;
+    //         $users->distributorship_exerience = $request->distributorship_exerience;
+    //         $users->experience_farm_garder = $request->experience_farm_garder;
+    //         $users->goal = $request->goal;
+    //         $users->user_type = 'fsc';
+    //         $users->is_deleted = 'no'; // 0 Means Active, 1 Means Delete
+    //         $users->active = 'no'; // 0 Means Active, 1 Means Inactive
+    //         $users->added_by =  ($request->created_by) ? $request->created_by: 'superadmin'; // 0- from Superadmin 1- Distributor
+    //         $users->save();
             
             
-            $idLastInserted=$users->id;
-            $imagedataPath=FRONT_DISTRIBUTOR_OWN_DOCUMENTS;
-            $photoName=$idLastInserted."_aadhar_card_image_front";
-            $inputfilenametoupload='aadhar_card_image_front';
+    //         $idLastInserted=$users->id;
+    //         $imagedataPath=FRONT_DISTRIBUTOR_OWN_DOCUMENTS;
+    //         $photoName=$idLastInserted."_aadhar_card_image_front";
+    //         $inputfilenametoupload='aadhar_card_image_front';
             
-            if (!empty($request->hasFile($inputfilenametoupload)))
-            {     
-                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-                $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_front'=>$filename]);
-            }
+    //         if (!empty($request->hasFile($inputfilenametoupload)))
+    //         {     
+    //             $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+    //             $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_front'=>$filename]);
+    //         }
             
-            $photoName=$idLastInserted."_aadhar_card_image_back";
-            $inputfilenametoupload='aadhar_card_image_back';
-            if (!empty($request->hasFile($inputfilenametoupload)))
-            {     
-                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-                $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_back'=>$filename]);
-            }
+    //         $photoName=$idLastInserted."_aadhar_card_image_back";
+    //         $inputfilenametoupload='aadhar_card_image_back';
+    //         if (!empty($request->hasFile($inputfilenametoupload)))
+    //         {     
+    //             $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+    //             $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_back'=>$filename]);
+    //         }
             
-            $photoName=$idLastInserted."_pan_card";
-            $inputfilenametoupload='pan_card';
-            if (!empty($request->hasFile($inputfilenametoupload)))
-            {     
-                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-                $users=FrontUsers::where('id',$idLastInserted)->update(['pan_card'=>$filename]);
-            }
-            
-            
-            $photoName=$idLastInserted."_light_bill";
-            $inputfilenametoupload='light_bill';
-            if (!empty($request->hasFile($inputfilenametoupload)))
-            {     
-                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-                $users=FrontUsers::where('id',$idLastInserted)->update(['light_bill'=>$filename]);
-            }
+    //         $photoName=$idLastInserted."_pan_card";
+    //         $inputfilenametoupload='pan_card';
+    //         if (!empty($request->hasFile($inputfilenametoupload)))
+    //         {     
+    //             $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+    //             $users=FrontUsers::where('id',$idLastInserted)->update(['pan_card'=>$filename]);
+    //         }
             
             
-            $photoName=$idLastInserted."_shop_act_image";
-            $inputfilenametoupload='shop_act_image';
-            if (!empty($request->hasFile($inputfilenametoupload)))
-            {     
-                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+    //         $photoName=$idLastInserted."_light_bill";
+    //         $inputfilenametoupload='light_bill';
+    //         if (!empty($request->hasFile($inputfilenametoupload)))
+    //         {     
+    //             $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+    //             $users=FrontUsers::where('id',$idLastInserted)->update(['light_bill'=>$filename]);
+    //         }
             
-                $users = FrontUsers::where('id',$idLastInserted)->update(['shop_act_image'=>$filename]);
             
-            }
+    //         $photoName=$idLastInserted."_shop_act_image";
+    //         $inputfilenametoupload='shop_act_image';
+    //         if (!empty($request->hasFile($inputfilenametoupload)))
+    //         {     
+    //             $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
             
-            $photoName=$idLastInserted."_product_purchase_bill";
-            $inputfilenametoupload='product_purchase_bill';
-            if (!empty($request->hasFile($inputfilenametoupload)))
-            {     
-                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-                $users=FrontUsers::where('id',$idLastInserted)->update(['product_purchase_bill'=>$filename]);
+    //             $users = FrontUsers::where('id',$idLastInserted)->update(['shop_act_image'=>$filename]);
             
-            }
+    //         }
+            
+    //         $photoName=$idLastInserted."_product_purchase_bill";
+    //         $inputfilenametoupload='product_purchase_bill';
+    //         if (!empty($request->hasFile($inputfilenametoupload)))
+    //         {     
+    //             $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+    //             $users=FrontUsers::where('id',$idLastInserted)->update(['product_purchase_bill'=>$filename]);
+            
+    //         }
             
         
         
                 
-            if($request->created_by){
-                $this->checkLevelofDistributor($request->created_by);
-            }
+    //         if($request->created_by){
+    //             $this->checkLevelofDistributor($request->created_by);
+    //         }
             
              
             
-            if ($users) {
-                return redirect()->back()->with('success', 'Data has been successfully stored.');
-            } else {
-                return redirect()->back()->with('error', 'Data has not been successfully stored.');
-            }
-        } catch (\Exception $e) {
-                return redirect()->back()->with('error', 'Data has not been successfully stored.');
+    //         if ($users) {
+    //             return redirect()->back()->with('success', 'Data has been successfully stored.');
+    //         } else {
+    //             return redirect()->back()->with('error', 'Data has not been successfully stored.');
+    //         }
+    //     } catch (\Exception $e) {
+    //             return redirect()->back()->with('error', 'Data has not been successfully stored.');
         
-        }
+    //     }
 
-    }
+    // }
     
 
-    public function processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName)
-    {
-        try{
-            info("request file to     ".$request);
-            info("inputfilenametoupload file to     ".$inputfilenametoupload);
-            info("imagedataPath file to     ".$imagedataPath);
-            info("photoName file to     ".$photoName);
+    // public function processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName)
+    // {
+    //     try{
+    //         info("request file to     ".$request);
+    //         info("inputfilenametoupload file to     ".$inputfilenametoupload);
+    //         info("imagedataPath file to     ".$imagedataPath);
+    //         info("photoName file to     ".$photoName);
 
-            if ($request->hasFile($inputfilenametoupload)) 
-            {
-                $applpic_ext = $request->file($inputfilenametoupload)->getClientOriginalExtension();
-                $fileUploadAttachmentOne = base64_encode(file_get_contents($request->file($inputfilenametoupload))); 
-                $applicantAttachmentOne = base64_decode($fileUploadAttachmentOne);
-                $path2 = $imagedataPath.$photoName.".".$applpic_ext;
-                file_put_contents($path2, $applicantAttachmentOne);  
-                return $photoName.".".$applpic_ext;
+    //         if ($request->hasFile($inputfilenametoupload)) 
+    //         {
+    //             $applpic_ext = $request->file($inputfilenametoupload)->getClientOriginalExtension();
+    //             $fileUploadAttachmentOne = base64_encode(file_get_contents($request->file($inputfilenametoupload))); 
+    //             $applicantAttachmentOne = base64_decode($fileUploadAttachmentOne);
+    //             $path2 = $imagedataPath.$photoName.".".$applpic_ext;
+    //             file_put_contents($path2, $applicantAttachmentOne);  
+    //             return $photoName.".".$applpic_ext;
+    //         }
+    //     }    
+    //     catch (\Exception $e) {
+    //         info("Could not create attachment file: ".$e->getMessage);
+    //     }
+    // }
+
+
+    public function frontdistributorregistration(Request $request)
+{
+    try {
+        $users = new FrontUsers();
+        $users->fname = $request->fname;
+        $users->mname = $request->mname;
+        $users->lname = $request->lname;
+        $users->password = $request->password;
+        $users->email = $request->email;
+        $users->phone = $request->phone;
+        $users->alternate_mobile = $request->alternate_mobile;
+        $users->state = $request->state;
+        $users->district = $request->district;
+        $users->taluka = $request->taluka;
+        $users->city = $request->city;
+        $users->business_address = $request->business_address;
+        $users->business_state = $request->business_state;
+        $users->business_district = $request->business_district;
+        $users->business_tuluka = $request->business_tuluka;
+        $users->business_village = $request->business_village;
+        $users->where_open_shop = $request->where_open_shop;
+        $users->used_sct = $request->used_sct;
+        $users->why_want_take_distributorship = $request->why_want_take_distributorship;
+        $users->distributorship_exerience = $request->distributorship_exerience;
+        $users->experience_farm_garder = $request->experience_farm_garder;
+        $users->goal = $request->goal;
+        $users->user_type = 'fsc';
+        $users->is_deleted = 'no'; // 0 Means Active, 1 Means Delete
+        $users->active = 'no'; // 0 Means Active, 1 Means Inactive
+        $users->added_by = $request->created_by ? $request->created_by : 'superadmin'; // 0- from Superadmin 1- Distributor
+        $users->save();
+
+        $idLastInserted = $users->id;
+        $imageDataPath = FRONT_DISTRIBUTOR_OWN_DOCUMENTS; // Adjust this path as needed
+
+        $filesToUpload = [
+            'aadhar_card_image_front' => 'aadhar_card_image_front',
+            'aadhar_card_image_back' => 'aadhar_card_image_back',
+            'pan_card' => 'pan_card',
+            'light_bill' => 'light_bill',
+            'shop_act_image' => 'shop_act_image',
+            'product_purchase_bill' => 'product_purchase_bill'
+        ];
+
+        foreach ($filesToUpload as $inputFileName => $photoName) {
+            if ($filename = $this->processUpload($request, $inputFileName, $imageDataPath, $idLastInserted . '_' . $photoName)) {
+                FrontUsers::where('id', $idLastInserted)->update([$inputFileName => $filename]);
             }
-        }    
-        catch (\Exception $e) {
-            info("Could not create attachment file: ".$e->getMessage);
         }
+
+        if ($request->created_by) {
+            $this->checkLevelofDistributor($request->created_by);
+        }
+
+        return redirect()->back()->with('success', 'Data has been successfully stored.');
+    } catch (\Exception $e) {
+        info("Error occurred: " . $e->getMessage());
+        return redirect()->back()->with('error', 'Data has not been successfully stored.');
     }
+}
+public function processUpload($request, $inputFileNameToUpload, $imageDataPath, $photoName)
+{
+    try {
+        if ($request->hasFile($inputFileNameToUpload)) {
+            $file = $request->file($inputFileNameToUpload);
+            $extension = $file->getClientOriginalExtension();
+            $filename = $photoName . '.' . $extension;
+            $file->move(public_path($imageDataPath), $filename);
+            return $filename;
+        }
+    } catch (\Exception $e) {
+        info("Could not create attachment file: " . $e->getMessage());
+    }
+    return null;
+}
+
+
 
     public function districtlist(Request $request)
     {
