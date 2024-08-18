@@ -36,7 +36,7 @@ $url = 'https://finalapi.soilchargertechnology.com/api/';
 //     return $result;
 // }
 
-$address_list = json_decode(CallAPI('get', $url . 'address_list'), true);
+$address_list = json_decode(CallAPI('get', $url . 'address_list_web'), true);
 $address_list = $address_list['data'];
 
 ?>
