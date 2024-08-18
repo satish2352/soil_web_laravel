@@ -1,6 +1,8 @@
 <?php
 $url = 'https://finalapi.soilchargertechnology.com/api/';
 
+
+
 function CallAPI($method, $url, $data = false)
 {
     $curl = curl_init();
@@ -36,8 +38,8 @@ function CallAPI($method, $url, $data = false)
     return $result;
 }
 
-$address_list = json_decode(CallAPI('get', $url . 'address_list'), true);
-$address_list = $address_list['data'];
+ $address_list = json_decode(CallAPI('get',$url.'address_list'), true);
+ $address_list = $address_list['data'];
 
 ?>
 <footer id="Footer">
@@ -63,7 +65,9 @@ $address_list = $address_list['data'];
                     <div class="footer-contact d-flex">
 
                         <i class="fas fa-map-marker-alt"></i> <span>Address: </span>
-                        <p class="ml-2">{{ $address_list->address }}</p>
+                        <p class="ml-2">Shop No.3, lower ground flow, below passport office, star zone mall, Nashik -
+                            Pune highway,
+                            Nashik - 422 101</p>
 
 
                     </div>
@@ -71,10 +75,8 @@ $address_list = $address_list['data'];
 
 
                         <i class="fas fa-mobile footer-mobi"></i> <span>Mobile&nbsp;&nbsp;: </span>
-                        <p class="ml-2"><a href="callto:866 920 0221"
-                                style="color: #b5b6b7">{{ $address_list->mobile_one }}</a> <br>
-                            <a href="callto:866 920 0221" style="color: #b5b6b7">{{ $address_list->mobile_two }}</a>
-                        </p>
+                        <p class="ml-2"><a href="callto:866 920 0221" style="color: #b5b6b7">+(91) 8669200221</a> <br>
+                            <a href="callto:866 920 0221" style="color: #b5b6b7">+(91) 9881798028</a></p>
 
 
                     </div>
@@ -138,13 +140,13 @@ $address_list = $address_list['data'];
                     <div class="footer-contact">
                         <h5><i class="fas fa-envelope-open"></i>Mails : </h5>
                         <ul>
-                            <li><span>For Officials &nbsp;: </span><a href="mailto:{{ $address_list->email_office }}"
-                                    style="color: #b5b6b7">{{ $address_list->email_office }}</a></li>
+                            <li><span>For Officials &nbsp;: </span><a href="mailto:soilchargertec@gmail.com"
+                                    style="color: #b5b6b7">soilchargertec@gmail.com</a></li>
                             <li><span>For Sales &nbsp;&nbsp;&nbsp;&nbsp;: </span><a
-                                    href="mailto:{{ $address_list->email_sales }}"
-                                    style="color: #b5b6b7">{{ $address_list->email_sales }}</a></li>
-                            <li><span>For Careers : </span><a href="mailto:{{ $address_list->email_careers }}"
-                                    style="color: #b5b6b7">{{ $address_list->email_careers }}</a></li>
+                                    href="mailto:salessoiltec1@gmail.com"
+                                    style="color: #b5b6b7">salessoiltec1@gmail.com</a></li>
+                            <li><span>For Careers : </span><a href="mailto:careers.soiltec@gmail.com"
+                                    style="color: #b5b6b7">hr.soiltec@gmail.com</a></li>
                         </ul>
                     </div>
                 </div>
@@ -164,16 +166,17 @@ $address_list = $address_list['data'];
                 <div class="col-xl-12 col-lg-12 col-md-12">
                     <div class="footer-social mb-4 mt-3">
                         <ul>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list->facebook_link }}"
-                                    target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list->twitter_link }}"
+                            <li class="hovicon effect-1 sub-a"><a
+                                    href="https://www.facebook.com/Soil.Charger.Technology/" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a></li>
+                            <li class="hovicon effect-1 sub-a"><a href="https://twitter.com/GoldenOpportu10"
                                     target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list->instagram_link }}"
-                                    target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list->whatsapp_link }}"
+                            <li class="hovicon effect-1 sub-a"><a href="https://www.instagram.com/" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                            <li class="hovicon effect-1 sub-a"><a href="https://www.youtube.com/user/ramanu7985"
                                     target="_blank"><i class="fab fa-youtube-square"></i></a></li>
-                            {{-- <li class="hovicon effect-1 sub-a"><a href="mailto:soilchargertec@gmail.com"
-                                    target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> --}}
+                            <li class="hovicon effect-1 sub-a"><a href="mailto:soilchargertec@gmail.com"
+                                    target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
                         </ul>
                     </div>
 
@@ -193,8 +196,7 @@ $address_list = $address_list['data'];
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="copyright-text">
-                        <p class="text-center">©{{ date('Y') }} All rights reserved<a href="#"> Soil
-                                Charger Technology</a>
+                        <p class="text-center">©2022 All rights reserved<a href="#"> Soil Charger Technology</a>
                         </p>
                     </div>
                 </div>
