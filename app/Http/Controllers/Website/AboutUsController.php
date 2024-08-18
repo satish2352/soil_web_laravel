@@ -52,11 +52,43 @@ class AboutUsController extends Controller
 
     }
 
-    function getAddressAPI(){
+    public function getAddressAPI(){
 
         $url = 'https://finalapi.soilchargertechnology.com/api/';
         $address_list = json_decode($this->fetchAddressData('post', $url . 'address_list_web',false));
-        dd($address_list);
+
+
+
+// Initialize cURL session
+$ch = curl_init();
+
+// Set the URL for the POST request
+curl_setopt($ch, CURLOPT_URL, "https://finalapi.soilchargertechnology.com/api/address_list_web");
+
+// Set the HTTP method to POST
+curl_setopt($ch, CURLOPT_POST, true);
+
+// Disable SSL verification (if necessary)
+// curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+
+// Set options to return the response as a string
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+// Execute the cURL request
+$response = curl_exec($ch);
+
+// Check for cURL errors
+if (curl_errno($ch)) {
+    echo 'Error:' . curl_error($ch);
+}
+
+// Close the cURL session
+curl_close($ch);
+
+// Output the response
+echo $response;
+
+        dd($response);
         $address_list = $address_list['data'];
 
         return $address_list;
