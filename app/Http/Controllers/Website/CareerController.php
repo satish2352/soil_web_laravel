@@ -250,14 +250,24 @@ class CareerController extends Controller
 
     public function processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName)
     {
-         if ($request->hasFile($inputfilenametoupload)) 
-         {
-            $applpic_ext = $request->file($inputfilenametoupload)->getClientOriginalExtension();
-            $fileUploadAttachmentOne = base64_encode(file_get_contents($request->file($inputfilenametoupload))); 
-            $applicantAttachmentOne = base64_decode($fileUploadAttachmentOne);
-            $path2 = $imagedataPath.$photoName.".".$applpic_ext;
-            file_put_contents($path2, $applicantAttachmentOne);  
-            return $photoName.".".$applpic_ext;
+        try{
+            info("request file to     ".$request);
+            info("inputfilenametoupload file to     ".$inputfilenametoupload);
+            info("imagedataPath file to     ".$imagedataPath);
+            info("photoName file to     ".$photoName);
+
+            if ($request->hasFile($inputfilenametoupload)) 
+            {
+                $applpic_ext = $request->file($inputfilenametoupload)->getClientOriginalExtension();
+                $fileUploadAttachmentOne = base64_encode(file_get_contents($request->file($inputfilenametoupload))); 
+                $applicantAttachmentOne = base64_decode($fileUploadAttachmentOne);
+                $path2 = $imagedataPath.$photoName.".".$applpic_ext;
+                file_put_contents($path2, $applicantAttachmentOne);  
+                return $photoName.".".$applpic_ext;
+            }
+        }    
+        catch (\Exception $e) {
+            info("Could not create attachment file: ".$e->getMessage);
         }
     }
 
