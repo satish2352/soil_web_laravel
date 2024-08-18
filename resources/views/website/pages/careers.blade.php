@@ -277,14 +277,14 @@
                 </div>
                 <div class="form-group col-md-3">
                   <label for="taluka1"><b>Taluka :</b></label>
-                  <select class="custom-select my-1 mr-sm-2 business_taluka" name="business_taluka" id="business_taluka"
+                  <select class="custom-select my-1 mr-sm-2 business_tuluka" name="business_tuluka" id="business_tuluka"
                     required="required">
 
                   </select>
                 </div>
                 <div class="form-group col-md-3">
                   <label for="village1"><b>Village :</b></label>
-                  <select class="custom-select my-1 mr-sm-2" id="business_city" name="business_city"
+                  <select class="custom-select my-1 mr-sm-2" id="business_village" name="business_village"
                     required="required">
 
                   </select>
@@ -1137,13 +1137,13 @@ $(document).on('change', '.business_district', function() {
       _token: '{{ csrf_token() }}'
     },
     success: function(response) {
-      $('#business_taluka').empty().append(
+      $('#business_tuluka').empty().append(
         "<option value=''>Select</option>"); // Clear and add default option
 
       if (response.success) {
         console.log("=========response", response);
         $.each(response.data, function(index, item) {
-          $('#business_taluka').append("<option value='" + item.location_id + "'>" + item.name +
+          $('#business_tuluka').append("<option value='" + item.location_id + "'>" + item.name +
             "</option>");
         });
       } else {
@@ -1169,7 +1169,7 @@ $(document).on('change', '.business_district', function() {
   });
 });
 
-$(document).on('change', '.business_taluka', function() {
+$(document).on('change', '.business_tuluka', function() {
   var talukaId = $(this).val(); // Get the selected state value
   console.log("========== stateid", talukaId);
   $.ajax({
@@ -1180,12 +1180,12 @@ $(document).on('change', '.business_taluka', function() {
       _token: '{{ csrf_token() }}'
     },
     success: function(response) {
-      $('#business_city').empty().append("<option value=''>Select</option>"); // Clear and add default option
+      $('#business_village').empty().append("<option value=''>Select</option>"); // Clear and add default option
 
       if (response.success) {
         console.log("=========response", response);
         $.each(response.data, function(index, item) {
-          $('#business_city').append("<option value='" + item.location_id + "'>" + item.name +
+          $('#business_village').append("<option value='" + item.location_id + "'>" + item.name +
             "</option>");
         });
       } else {
@@ -1237,12 +1237,12 @@ $(document).on('change', '.business_district', function() {
     },
     success: function(response) {
       const obj = response.data;
-      $('#business_taluka').empty();
+      $('#business_tuluka').empty();
       $(function() {
-        $('#business_taluka').append("<option value=''>select</option>");
+        $('#business_tuluka').append("<option value=''>select</option>");
         $.each(obj, function(i, item) {
           console.log(item);
-          $('#business_taluka').append("<option value='" + item.location_id +
+          $('#business_tuluka').append("<option value='" + item.location_id +
             "'>" + item.name + "</option>");
         });
       });
@@ -1261,22 +1261,22 @@ $(document).on('change', '.business_district', function() {
   });
 });
 
-$(document).on('change', '.business_taluka', function() {
+$(document).on('change', '.business_tuluka', function() {
   var urlGet = "https://finalapi.soilchargertechnology.com/api/villagelist";
   $.ajax({
     type: "POST",
     url: urlGet,
     data: {
-      "taluka_id": $("#business_taluka").val(),
+      "taluka_id": $("#business_tuluka").val(),
     },
     success: function(response) {
       const obj = response.data;
-      $('#business_city').empty();
+      $('#business_village').empty();
       $(function() {
-        $('#business_city').append("<option value=''>select</option>");
+        $('#business_village').append("<option value=''>select</option>");
         $.each(obj, function(i, item) {
           console.log(item);
-          $('#business_city').append("<option value='" + item.location_id +
+          $('#business_village').append("<option value='" + item.location_id +
             "'>" + item.name + "</option>");
         });
       });

@@ -171,61 +171,61 @@ class CareerController extends Controller
             
             
             $idLastInserted=$users->id;
-        $imagedataPath=FRONT_DISTRIBUTOR_OWN_DOCUMENTS;
-        $photoName=$idLastInserted."_aadhar_card_image_front";
-        $inputfilenametoupload='aadhar_card_image_front';
-        
-        if (!empty($request->hasFile($inputfilenametoupload)))
-        {     
-            $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-            $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_front'=>$filename]);
-        }
-        
-        $photoName=$idLastInserted."_aadhar_card_image_back";
-        $inputfilenametoupload='aadhar_card_image_back';
-        if (!empty($request->hasFile($inputfilenametoupload)))
-        {     
-            $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-            $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_back'=>$filename]);
-        }
-        
-        $photoName=$idLastInserted."_pan_card";
-        $inputfilenametoupload='pan_card';
-        if (!empty($request->hasFile($inputfilenametoupload)))
-        {     
-            $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-            $users=FrontUsers::where('id',$idLastInserted)->update(['pan_card'=>$filename]);
-        }
-        
-        
-        $photoName=$idLastInserted."_light_bill";
-        $inputfilenametoupload='light_bill';
-        if (!empty($request->hasFile($inputfilenametoupload)))
-        {     
-            $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-            $users=FrontUsers::where('id',$idLastInserted)->update(['light_bill'=>$filename]);
-        }
-        
-        
-        $photoName=$idLastInserted."_shop_act_image";
-        $inputfilenametoupload='shop_act_image';
-        if (!empty($request->hasFile($inputfilenametoupload)))
-        {     
-            $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-           
-            $users = FrontUsers::where('id',$idLastInserted)->update(['shop_act_image'=>$filename]);
-           
-        }
-        
-        $photoName=$idLastInserted."_product_purchase_bill";
-        $inputfilenametoupload='product_purchase_bill';
-        if (!empty($request->hasFile($inputfilenametoupload)))
-        {     
-            $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
-            $users=FrontUsers::where('id',$idLastInserted)->update(['product_purchase_bill'=>$filename]);
-           
-        }
-        
+            $imagedataPath=FRONT_DISTRIBUTOR_OWN_DOCUMENTS;
+            $photoName=$idLastInserted."_aadhar_card_image_front";
+            $inputfilenametoupload='aadhar_card_image_front';
+            
+            if (!empty($request->hasFile($inputfilenametoupload)))
+            {     
+                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+                $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_front'=>$filename]);
+            }
+            
+            $photoName=$idLastInserted."_aadhar_card_image_back";
+            $inputfilenametoupload='aadhar_card_image_back';
+            if (!empty($request->hasFile($inputfilenametoupload)))
+            {     
+                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+                $users=FrontUsers::where('id',$idLastInserted)->update(['aadhar_card_image_back'=>$filename]);
+            }
+            
+            $photoName=$idLastInserted."_pan_card";
+            $inputfilenametoupload='pan_card';
+            if (!empty($request->hasFile($inputfilenametoupload)))
+            {     
+                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+                $users=FrontUsers::where('id',$idLastInserted)->update(['pan_card'=>$filename]);
+            }
+            
+            
+            $photoName=$idLastInserted."_light_bill";
+            $inputfilenametoupload='light_bill';
+            if (!empty($request->hasFile($inputfilenametoupload)))
+            {     
+                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+                $users=FrontUsers::where('id',$idLastInserted)->update(['light_bill'=>$filename]);
+            }
+            
+            
+            $photoName=$idLastInserted."_shop_act_image";
+            $inputfilenametoupload='shop_act_image';
+            if (!empty($request->hasFile($inputfilenametoupload)))
+            {     
+                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+            
+                $users = FrontUsers::where('id',$idLastInserted)->update(['shop_act_image'=>$filename]);
+            
+            }
+            
+            $photoName=$idLastInserted."_product_purchase_bill";
+            $inputfilenametoupload='product_purchase_bill';
+            if (!empty($request->hasFile($inputfilenametoupload)))
+            {     
+                $filename=$this->processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName);
+                $users=FrontUsers::where('id',$idLastInserted)->update(['product_purchase_bill'=>$filename]);
+            
+            }
+            
         
         
                 
@@ -236,19 +236,19 @@ class CareerController extends Controller
              
             
             if ($users) {
-            return redirect()->back()->with('success', 'Data has been successfully stored.');
-        } else {
-            return redirect()->back()->with('error', 'Data has not been successfully stored.');
+                return redirect()->back()->with('success', 'Data has been successfully stored.');
+            } else {
+                return redirect()->back()->with('error', 'Data has not been successfully stored.');
+            }
+        } catch (\Exception $e) {
+                return redirect()->back()->with('error', 'Data has not been successfully stored.');
+        
         }
-    } catch (\Exception $e) {
-            return redirect()->back()->with('error', 'Data has not been successfully stored.');
-       
-    }
 
     }
     
 
-    public function processUpload(Request $request, $inputfilenametoupload,$imagedataPath,$photoName)
+    public function processUpload($request, $inputfilenametoupload,$imagedataPath,$photoName)
     {
          if ($request->hasFile($inputfilenametoupload)) 
          {
