@@ -43,7 +43,7 @@
 ?>
 @inject('getAddressAPILink', 'App\Http\Controllers\Website\AboutUsController')
 
-{{dd($getAddressAPILink->getAddressAPI())}}
+<?php $address_list = $getAddressAPILink->getAddressAPI(); ?>
 <footer id="Footer">
 
     <div class="footer-bg-clr fix">
