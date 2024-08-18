@@ -39,7 +39,9 @@ $url = 'https://finalapi.soilchargertechnology.com/api/';
 $address_list = json_decode(CallAPI('get', $url . 'address_list_web'), true);
 $address_list = $address_list['data'];
 
+
 ?>
+{{dd($address_list)}}
 <footer id="Footer">
 
     <div class="footer-bg-clr fix">
