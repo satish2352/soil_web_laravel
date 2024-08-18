@@ -1,48 +1,6 @@
-<?php
-// $url = 'https://finalapi.soilchargertechnology.com/api/';
-
-// function CallAPI($method, $url, $data = false)
-// {
-//     $curl = curl_init();
-
-//     switch ($method) {
-//         case 'POST':
-//             curl_setopt($curl, CURLOPT_POST, 1);
-
-//             if ($data) {
-//                 curl_setopt($curl, CURLOPT_POSTFIELDS, $data);
-//             }
-//             break;
-//         case 'PUT':
-//             curl_setopt($curl, CURLOPT_PUT, 1);
-//             break;
-//         default:
-//             if ($data) {
-//                 $url = sprintf('%s?%s', $url, http_build_query($data));
-//             }
-//     }
-
-//     // Optional Authentication:
-//     curl_setopt($curl, CURLOPT_HTTPAUTH, CURLAUTH_BASIC);
-//     curl_setopt($curl, CURLOPT_USERPWD, 'username:password');
-
-//     curl_setopt($curl, CURLOPT_URL, $url);
-//     curl_setopt($curl, CURLOPT_RETURNTRANSFER, 1);
-
-//     $result = curl_exec($curl);
-
-//     curl_close($curl);
-
-//     return $result;
-// }
-
-// $getAddressAPILink->getAddressAPI() = json_decode(CallAPI('get', $url . 'address_list_web'), true);
-// $getAddressAPILink->getAddressAPI() = $getAddressAPILink->getAddressAPI()['data'];
-
-
-?>
 @inject('getAddressAPILink', 'App\Http\Controllers\Website\AboutUsController')
 
+<?php $address_list =  $getAddressAPILink->getAddressAPI(); ?>
 <footer id="Footer">
 
     <div class="footer-bg-clr fix">
@@ -66,7 +24,7 @@
                     <div class="footer-contact d-flex">
 
                         <i class="fas fa-map-marker-alt"></i> <span>Address: </span>
-                        <p class="ml-2">{{ $getAddressAPILink->getAddressAPI()->address }}</p>
+                        <p class="ml-2">{{ $address_list['address'] }}</p>
 
 
                     </div>
@@ -75,8 +33,8 @@
 
                         <i class="fas fa-mobile footer-mobi"></i> <span>Mobile&nbsp;&nbsp;: </span>
                         <p class="ml-2"><a href="callto:866 920 0221"
-                                style="color: #b5b6b7">{{ $getAddressAPILink->getAddressAPI()->mobile_one }}</a> <br>
-                            <a href="callto:866 920 0221" style="color: #b5b6b7">{{ $getAddressAPILink->getAddressAPI()->mobile_two }}</a>
+                                style="color: #b5b6b7">{{ $address_list['mobile_one'] }}</a> <br>
+                            <a href="callto:866 920 0221" style="color: #b5b6b7">{{ $address_list['mobile_two'] }}</a>
                         </p>
 
 
@@ -141,13 +99,13 @@
                     <div class="footer-contact">
                         <h5><i class="fas fa-envelope-open"></i>Mails : </h5>
                         <ul>
-                            <li><span>For Officials &nbsp;: </span><a href="mailto:{{ $getAddressAPILink->getAddressAPI()->email_office }}"
-                                    style="color: #b5b6b7">{{ $getAddressAPILink->getAddressAPI()->email_office }}</a></li>
+                            <li><span>For Officials &nbsp;: </span><a href="mailto:{{ $address_list['email_office'] }}"
+                                    style="color: #b5b6b7">{{ $address_list['email_office'] }}</a></li>
                             <li><span>For Sales &nbsp;&nbsp;&nbsp;&nbsp;: </span><a
-                                    href="mailto:{{ $getAddressAPILink->getAddressAPI()->email_sales }}"
-                                    style="color: #b5b6b7">{{ $getAddressAPILink->getAddressAPI()->email_sales }}</a></li>
-                            <li><span>For Careers : </span><a href="mailto:{{ $getAddressAPILink->getAddressAPI()->email_careers }}"
-                                    style="color: #b5b6b7">{{ $getAddressAPILink->getAddressAPI()->email_careers }}</a></li>
+                                    href="mailto:{{ $address_list['email_sales'] }}"
+                                    style="color: #b5b6b7">{{ $address_list['email_sales'] }}</a></li>
+                            <li><span>For Careers : </span><a href="mailto:{{ $address_list['email_careers'] }}"
+                                    style="color: #b5b6b7">{{ $address_list['email_careers'] }}</a></li>
                         </ul>
                     </div>
                 </div>
@@ -167,13 +125,13 @@
                 <div class="col-xl-12 col-lg-12 col-md-12">
                     <div class="footer-social mb-4 mt-3">
                         <ul>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $getAddressAPILink->getAddressAPI()->facebook_link }}"
+                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['facebook_link'] }}"
                                     target="_blank"><i class="fab fa-facebook-f"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $getAddressAPILink->getAddressAPI()->twitter_link }}"
+                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['twitter_link'] }}"
                                     target="_blank"><i class="fab fa-twitter"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $getAddressAPILink->getAddressAPI()->instagram_link }}"
+                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['instagram_link'] }}"
                                     target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $getAddressAPILink->getAddressAPI()->whatsapp_link }}"
+                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['whatsapp_link'] }}"
                                     target="_blank"><i class="fab fa-youtube-square"></i></a></li>
                             {{-- <li class="hovicon effect-1 sub-a"><a href="mailto:soilchargertec@gmail.com"
                                     target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> --}}

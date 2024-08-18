@@ -83,7 +83,6 @@ class AboutUsController extends Controller
         // Output the response
         $address_list = json_decode($response, true);
         $address_list = $address_list['data'][0];
-dd($address_list);
         return $address_list;
     }
 
