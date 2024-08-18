@@ -56,6 +56,7 @@ class AboutUsController extends Controller
 
         $url = 'https://finalapi.soilchargertechnology.com/api/';
         $address_list = json_decode($this->fetchAddressData('get', $url . 'address_list_web'), true);
+        dd($address_list);
         $address_list = $address_list['data'];
 
         return $address_list;
