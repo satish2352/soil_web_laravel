@@ -81,8 +81,9 @@ class AboutUsController extends Controller
         curl_close($ch);
 
         // Output the response
-        $address_list = json_decode($response['data'], true);
-
+        $address_list = json_decode($response, true);
+        $address_list = $address_list['data'];
+dd($address_list);
         return $address_list;
     }
 
