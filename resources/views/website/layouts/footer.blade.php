@@ -1,5 +1,5 @@
 <?php
-// $url = 'https://finalapi.soilchargertechnology.com/api/';
+$url = 'https://finalapi.soilchargertechnology.com/api/';
 
 // function CallAPI($method, $url, $data = false)
 // {
