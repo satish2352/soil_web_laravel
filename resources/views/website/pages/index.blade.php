@@ -1,5 +1,27 @@
 @include('website.layouts.header')
+<style>
+  .carousel-item {
+    height: 100vh; /* Adjust this depending on your design */
+    min-height: 400px; /* Minimum height for smaller screens */
+}
 
+.carousel-item img {
+    object-fit: cover; /* Ensures image covers the container without being stretched */
+    height: 100%; /* Full height of the carousel */
+    width: 100%; /* Full width of the carousel */
+}
+
+.carousel-caption {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+</style>
 <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
       <?php foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
