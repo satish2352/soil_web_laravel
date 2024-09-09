@@ -13,7 +13,7 @@
             echo 'active';
         } ?> banner0">
             <!-- <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." /> -->
-            <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
+            <img class="my-4" src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
 
             <div class="carousel-caption">
                 <p class="banner-img1-1" data-aos="fade-down" data-delay=".4s">
