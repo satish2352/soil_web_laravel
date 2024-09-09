@@ -35,7 +35,7 @@ class IndexController extends Controller
         $fronttestimonialslist = $this->fronttestimonialslist();
         $counter_list=$this->counter_list();
         $frontblogarticlelist=$this->frontblogarticlelist($request);
-        $frontproductlist=$this->frontproductlist($request);
+        // $frontproductlist=$this->frontproductlist($request);
         $statelist=$this->statelist($request);
         $webvideo_educationallimit=$this->webvideo_educationallimit($request);
         $frontphotogallerylistlimit=$this->frontphotogallerylistlimit($request);
@@ -55,7 +55,7 @@ class IndexController extends Controller
             'counter_list',
             'frontblogarticlelist',
             'statelist',
-            'frontproductlist',
+            // 'frontproductlist',
             'webvideo_educationallimit',
             'frontphotogallerylistlimit',
             'frontmissionlist',
