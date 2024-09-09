@@ -1,6 +1,6 @@
 @include('website.layouts.header')
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleCaptions my-4" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
     <li data-target="#carouselExampleCaptions" data-slide-to="<?php echo $key; ?>" class="active"></li>
