@@ -9,7 +9,7 @@
 
   <div class="carousel-inner">
     <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
-    <div class="carousel-item <?php if($key==0) { echo "active"; } ?> banner0">
+    <div class="carousel-item mt-2 <?php if($key==0) { echo "active"; } ?> banner0">
       <!-- <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." /> -->
       <img src="<?php echo  $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
 
