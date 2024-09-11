@@ -1,6 +1,6 @@
 @include('website.layouts.header')
 
-<div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
+{{-- <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
   <ol class="carousel-indicators">
     <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
     <li data-target="#carouselExampleCaptions" data-slide-to="<?php echo $key; ?>" class="active"></li>
@@ -30,7 +30,7 @@
     <span class="carousel-control-next-icon" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
-</div>
+</div> --}}
 
 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
