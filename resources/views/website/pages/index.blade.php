@@ -1,5 +1,4 @@
 @include('website.layouts.header')
-<div style="padding-top: 100px !important;">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
@@ -7,9 +6,9 @@
       <?php  } ?>
     </ol>
 
-    <div class="carousel-inner mt-4">
+    <div class="carousel-inner" style="padding-top: 100px !important;">
       <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
-      <div class="carousel-item mt-2 <?php if($key==0) { echo "active"; } ?> banner0">
+      <div class="carousel-item <?php if($key==0) { echo "active"; } ?> banner0">
         <!-- <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." /> -->
         <img src="<?php echo  $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." />
 
@@ -31,7 +30,6 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-</div>
 
 <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
   <span class="carousel-control-prev-icon" aria-hidden="true"></span>
