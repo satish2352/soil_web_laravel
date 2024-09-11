@@ -6,7 +6,7 @@
       <?php  } ?>
     </ol>
 
-    <div class="carousel-inner" style="padding-top: 100px !important;">
+    <div class="carousel-inner" style="padding-top: 120px !important;">
       <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
       <div class="carousel-item <?php if($key==0) { echo "active"; } ?> banner0">
         <!-- <img src="<?php echo $frontsliderlistdata['photopath']; ?>" class="w-100 x mt-10" alt="..." /> -->
