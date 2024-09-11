@@ -1,5 +1,5 @@
 @include('website.layouts.header')
-<div style="margin-top: 100px !important;">
+<div style="margin-top: 100px !important; padding-top: 100px !important;">
   <div id="carouselExampleCaptions" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
       <?php  foreach($frontsliderlist as $key => $frontsliderlistdata ) { ?>
