@@ -29,7 +29,7 @@ class VideoGallery extends Controller
     public function webvideo_educationallimit(Request $request)
     {
          
-            $targetvideo = WebVideos::where('status',0)->where('all','category','Educational')->orderBy('id', 'DESC')->get();
+            $targetvideo = WebVideos::where('status',0)->orderBy('id', 'DESC')->get();
             return $targetvideo;
     }
 
