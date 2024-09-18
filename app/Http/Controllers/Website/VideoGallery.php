@@ -19,7 +19,7 @@ class VideoGallery extends Controller
 
         return view('website.pages.video-gallery',compact('webvideo_educationallimit'));
     }
-    public function index2(Request $request)
+    public function index2(Request $request): mixed
     {
 
         $webvideo_educationallimit=$this->webvideo_educationallimit($request);
@@ -29,7 +29,7 @@ class VideoGallery extends Controller
     public function webvideo_educationallimit(Request $request)
     {
          
-            $targetvideo = WebVideos::where('status',0)->where('category','Educational')->orderBy('id', 'DESC')->LIMIT(8)->get();
+            $targetvideo = WebVideos::where('status',0)->where('category','Educational')->orderBy('id', 'DESC')->get();
             return $targetvideo;
     }
 

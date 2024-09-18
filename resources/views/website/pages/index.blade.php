@@ -548,7 +548,7 @@ $frontphotogallerylistlimit_data) { ?>
     </div>
   </div>
 </section>
-{{-- <section id="product" class="home-product-area h-product-bg pt-50 pb-15">
+<section id="product" class="home-product-area h-product-bg pt-50 pb-15">
   <div class="container  container-full">
     <div class="row justify-content-center">
       <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-xs-12">
@@ -592,7 +592,7 @@ $frontphotogallerylistlimit_data) { ?>
       <?php }?>
     </div>
   </div>
-</section> --}}
+</section>
 
 <script>
 $(document).ready(function() {
