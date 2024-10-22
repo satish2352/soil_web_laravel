@@ -7,11 +7,24 @@ use Illuminate\Http\Request;
 use Session;
 use Validator;
 use Config;
-use App\Models\WebAboutUs;
+use App\Models\
+{
+    WebAboutUs,
+    Address
+};
 
 class AboutUsController extends Controller
 {
- 
+    
+    public function getAddressAPI(){
+
+       
+        $result =Address::get();
+        $address_list = $result[0];
+        return $address_list;
+    }
+
+  
     public function index(Request $request)
     {
        
