@@ -19,9 +19,9 @@ class AboutUsController extends Controller
     public function getAddressAPI(){
 
        
-        $result =Address::get();
-        $address_list = $result[0];
-        return $address_list;
+        $result =Address::first();
+        // $address_list = $result[0];
+        return $result;
     }
 
   
