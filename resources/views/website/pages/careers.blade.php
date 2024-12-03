@@ -358,7 +358,7 @@
                                            <label for="textadd5"><b>* HOW MANY FARMERS DO YOU WANT TO WORK WITH ? & APPROXIMATELY HOW MUCH OF A TECHNOLOGY CAN YOU REACH TO THE FARMERS ? WHAT IS YOUR GOAL?</b></label>
                                          </div>
                                          <div class="form-group col-md-6">
-                                             <textarea class="form-control" id="goal" id="goal" rows="2" placeholder="Describe" required="required"></textarea>
+                                             <textarea class="form-control" name="goal" id="goal" rows="2" placeholder="Describe" required="required"></textarea>
                                          </div>
                                    </div>
                                   <!--  <center>
@@ -399,7 +399,7 @@
                                    <div class="form-row">
                                                        <div class="form-group col-md-6">
                                                            <label for="inputname"><b>Full Name :</b></label>
-                                                           <input type="text" class="form-control txtname1" name="name" id="name" placeholder="Enter your full name" required="required">
+                                                           <input type="text" class="form-control" name="name" id="name" placeholder="Enter your full name" required="required">
                                                        </div>
                                                        <div class="form-group col-md-6">
                                                            <label for="inputemail5"><b>Email :</b></label>
