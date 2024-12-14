@@ -131,8 +131,11 @@
                                     target="_blank"><i class="fab fa-twitter"></i></a></li>
                             <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['instagram_link'] }}"
                                     target="_blank"><i class="fab fa-instagram"></i></a></li>
-                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['whatsapp_link'] }}"
+                            <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['youtube_link'] }}"
                                     target="_blank"><i class="fab fa-youtube-square"></i></a></li>
+
+                                    <li class="hovicon effect-1 sub-a"><a href="{{ $address_list['whatsapp_link'] }}"
+                                        target="_blank"><i class="fab fa-whatsapp"></i></a></li>
                             {{-- <li class="hovicon effect-1 sub-a"><a href="mailto:soilchargertec@gmail.com"
                                     target="_blank"><i class="fa fa-envelope" aria-hidden="true"></i></a></li> --}}
                         </ul>
