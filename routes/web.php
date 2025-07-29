@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', ['as' => '/', 'uses' => 'App\Http\Controllers\Website\IndexController@index']);
+Route::get('*', ['as' => '/', 'uses' => 'App\Http\Controllers\Website\IndexController@index']);
 Route::get('/vision-mission', ['as' => 'vision-mission', 'uses' => 'App\Http\Controllers\Website\VisionMissionController@index']);
 Route::get('/about-us', ['as' => 'about-us', 'uses' => 'App\Http\Controllers\Website\AboutUsController@index']);
 Route::get('/our-team', ['as' => 'our-team', 'uses' => 'App\Http\Controllers\Website\OurTeamController@index']);
